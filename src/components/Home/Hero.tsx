@@ -2,12 +2,8 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section  className="w-full px-3 py-6 sm:px-5 sm:py-8 lg:px-8">
-      <div className="relative mx-auto w-full max-w-[936px]">
-
-        {/* <section className="w-full px-3 py-6 sm:px-5 sm:py-8 lg:px-8">
-  <div className="relative mx-auto w-full max-w-[1200px]"> */}
-
+    <section className="w-full px-3 py-6 sm:px-5 sm:py-8 lg:px-8">
+      <div className="relative mx-auto max-w-[1000px]">
         {/* =====================================================
             TOP SECTION
         ===================================================== */}
@@ -53,8 +49,7 @@ const HeroSection = () => {
                 lg:leading-[1.25]
               "
             >
-              Where{" "}
-              <span className="text-[#C0612B]">Livestock</span>
+              Where <span className="text-[#C0612B]">Livestock</span>
               <br />
               Meets
               <br />
@@ -91,7 +86,7 @@ const HeroSection = () => {
           className="
             absolute
             left-1/2
-            top-[325px]
+            top-[337px]
             z-30
             hidden
             -translate-x-1/2
@@ -104,22 +99,22 @@ const HeroSection = () => {
           <div
             className="
               flex
-              h-[225px]
-              w-[225px]
+              h-[170px]
+              w-[170px]
               items-center
               justify-center
               rounded-full
-             
-             
-             
+              border-[3px]
+              border-[#C0612B]
+              bg-[#FFFDFB]
             "
           >
             <Image
               src="/HeroSection/Ellipse.png"
               alt="Logo"
-              width={150}
-              height={150}
-              className="h-[150px] w-[150px] object-contain"
+              width={120}
+              height={120}
+              className="h-[115px] w-[115px] object-contain"
             />
           </div>
         </div>
@@ -175,12 +170,10 @@ const HeroSection = () => {
             lg:gap-6
           "
         >
-
           {/* ===================================================
               LEFT STACK
           =================================================== */}
           <div className="flex flex-col gap-4">
-
             {/* Stay Tuned */}
             <div
               className="

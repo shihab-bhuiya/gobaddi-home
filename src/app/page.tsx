@@ -1,3 +1,5 @@
+import ComingSoon from "@/components/Home/ComingSoon";
+import ContactSection from "@/components/Home/ContactSection";
 import HeroSection from "@/components/Home/Hero";
 import NavBar from "@/components/Home/NavBar";
 import SmartLivestockHero from "@/components/Home/SmartLivestockHero";
@@ -13,6 +15,8 @@ export default function Home() {
    <SmartLivestockHero/>
    <WhoWeAre/>
    <WhoWeAreCards/>
+   <ComingSoon/>
+   <ContactSection/>
     </div>
   );
 }

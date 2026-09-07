@@ -113,8 +113,9 @@ const WhoWeAreCards = () => {
               src="/wow/image-3.png"
               alt="Woman with livestock"
               fill
+    
               sizes="(max-width: 640px) 90vw, 33vw"
-              className="object-cover"
+              className="object-cover bg-cover"
             />
           </div>
         </div>
