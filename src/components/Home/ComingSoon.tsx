@@ -179,7 +179,7 @@ const ComingSoon = () => {
             }}
           >
             <Image
-              src="/comingSoon/image.png"
+              src="/wow/image.png"
               alt="New livestock platform"
               fill
               sizes="
