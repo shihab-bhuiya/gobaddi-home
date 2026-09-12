@@ -1,57 +1,35 @@
-import HeroCow from "./HeroCow";
-import HeroDescription from "./HeroDescription";
-import HeroHeading from "./HeroHeading";
-import HeroLogo from "./HeroLogo";
-import HeroPhone from "./HeroPhone";
-import HeroStayTuned from "./HeroStayTuned";
 
+import HeroHeading from "./HeroHeading";
+import HeroCow from "./HeroCow";
+import HeroLogo from "./HeroLogo";
+import HeroStayTuned from "./HeroStayTuned";
+import HeroPhone from "./HeroPhone";
+import HeroDescription from "./HeroDescription";
 
 const HeroSection = () => {
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-8">
-      <div className="relative mx-auto w-full max-w-[1000px]">
+    <section className="relative px-3 pt-4 sm:px-4 lg:px-0">
+      
 
-        {/* =========================
-            TOP SECTION
-        ========================== */}
-
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.57fr_1fr] lg:gap-6">
+        {/* TOP */}
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-[1.57fr_1fr] lg:gap-6">
           <HeroHeading />
           <HeroCow />
         </div>
 
-        {/* =========================
-            CENTER LOGO
-        ========================== */}
-
+        {/* LOGO */}
         <HeroLogo />
 
-        {/* =========================
-            BOTTOM SECTION
-        ========================== */}
-
-        <div
-          className="
-            mt-4
-            grid
-            grid-cols-1
-            gap-4
-            sm:grid-cols-2
-            lg:mt-6
-            lg:grid-cols-[1fr_1fr_1.48fr]
-            lg:gap-6
-          "
-        >
-          {/* Left */}
+        {/* BOTTOM */}
+        <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:mt-6 lg:grid-cols-[1fr_1fr_1.48fr] lg:gap-6">
           <HeroStayTuned />
-
-          {/* Phone */}
           <HeroPhone />
-
-          {/* Description */}
-          <HeroDescription />
+          <div className="sm:col-span-2 lg:col-span-1">
+            <HeroDescription />
+          </div>
         </div>
-      </div>
+
+    
     </section>
   );
 };

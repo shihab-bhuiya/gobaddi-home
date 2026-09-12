@@ -5,7 +5,7 @@ const HeroPhone = () => {
     <div
       className="
         relative
-        h-[350px]
+        h-[330px]
         overflow-hidden
         rounded-[24px]
         bg-[#C0612B]
@@ -29,11 +29,11 @@ const HeroPhone = () => {
           bottom-[-12px]
           left-1/2
           z-10
-          w-[300px]
+          w-[280px]
           max-w-none
           -translate-x-1/2
           object-contain
-          sm:w-[330px]
+          sm:w-[320px]
         "
       />
 

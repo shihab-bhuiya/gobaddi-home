@@ -5,34 +5,35 @@ const HeroLogo = () => {
     <div
       className="
         absolute
-        left-[61%]
-        top-[325px]
-        z-30
+        left-1/2
+        top-[50%]
+        
+        z-50
         hidden
         -translate-x-1/2
         -translate-y-1/2
-        lg:flex
+        lg:block
       "
     >
       <div
         className="
           flex
-          h-[154px]
-          w-[154px]
+          h-[155px]
+          w-[155px]
           items-center
           justify-center
           rounded-full
-          border-[3px]
-          border-[#C0612B]
+          
+          
           bg-[#FFFDFB]
         "
       >
         <Image
           src="/HeroSection/Ellipse.png"
           alt="গবাদি logo"
-          width={120}
-          height={120}
-          className="h-[115px] w-[115px] object-contain"
+          width={135}
+          height={135}
+          className="h-[120px] w-[120px] object-contain"
         />
       </div>
     </div>

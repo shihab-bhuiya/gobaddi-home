@@ -1,6 +1,6 @@
 const HeroDescription = () => {
   return (
-    <div className="relative min-h-[300px] overflow-hidden rounded-[24px] border border-[#C0612B] sm:min-h-[300px] lg:min-h-0">
+    <div className="relative min-h-[260px] overflow-hidden rounded-[24px] border border-[#C0612B] sm:min-h-[300px] lg:min-h-0">
 
       {/* Background */}
       <div
@@ -44,9 +44,11 @@ const HeroDescription = () => {
             lg:text-[18px]
           "
         >
-          AI-powered digital platform transforming the livestock
-          eco-system by connecting farmers, veterinarians, and also
-          trusted providers in one place.
+          <p className="ml-[35%]"                                                                                                                                                   >AI-powered digital platform </p> 
+          <p>transforming the livestock </p>
+          <p> eco-system by connecting</p> <p>  farmers, veterinarians, and also</p>
+          <p> 
+          trusted providers in one place.</p>
         </p>
       </div>
     </div>

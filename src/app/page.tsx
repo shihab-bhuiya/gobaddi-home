@@ -10,7 +10,7 @@ import WhoWeAreCards from "@/components/Home/WhoWeAreCard";
 
 export default function Home() {
   return (
-    <div className="">
+      <div className="mx-auto min-h-screen w-full max-w-[1020px] bg-[#FFFDFB]">
    <NavBar/>
    <HeroSection/>
    <SmartLivestockHero/>

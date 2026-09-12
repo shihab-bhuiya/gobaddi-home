@@ -1,6 +1,6 @@
 const HeroHeading = () => {
   return (
-    <div className="relative h-[325px] w-full">
+    <div className="relative h-[280px] w-full sm:h-[300px] lg:h-[325px]">
       {/* SVG SHAPE */}
       <svg
         className="absolute inset-0 h-full w-full"
@@ -36,15 +36,15 @@ const HeroHeading = () => {
       </svg>
 
       {/* CONTENT */}
-      <div className="relative z-10 flex h-full items-center px-6 sm:px-8">
+      <div className="relative z-10 flex h-full items-center px-5 sm:px-7 lg:px-8">
         <h1
           className="
-            text-[42px]
+            text-[36px]
             font-extrabold
             leading-[1.12]
             tracking-tight
             text-[#171717]
-            sm:text-[48px]
+            sm:text-[44px]
             lg:text-[58px]
             lg:leading-[1.15]
           "
