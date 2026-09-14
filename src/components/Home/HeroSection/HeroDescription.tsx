@@ -51,8 +51,11 @@ const HeroDescription = () => {
           trusted providers in one place.</p>
         </p>
       </div>
+    
     </div>
   );
 };
 
 export default HeroDescription;
+
+

@@ -1,3 +1,60 @@
+
+import React from 'react';
+
+const HeroSection = () => {
+    return (
+        <div>
+            
+        </div>
+    );
+};
+
+export default HeroSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import Image from "next/image";
 
 // const HeroSection = () => {
