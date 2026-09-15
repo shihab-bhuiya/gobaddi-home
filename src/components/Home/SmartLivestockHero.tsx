@@ -4,10 +4,10 @@ import Image from "next/image";
 
 const SmartLivestockHero = () => {
   return (
-    <section className="w-full relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
-      <div className="flex">
+     <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-8 items-center">
         {/* Left Side */}
-        <div className="max-w-2xl">
+         <div className="w-full max-w-2xl">
           <button className="text-[#C0612B] border border-[#C0612B] rounded-2xl p-1 bg-[#FBE6DA] ">
             OUR VISIONS
           </button>
@@ -17,7 +17,7 @@ const SmartLivestockHero = () => {
           </h1>
 
           <p>
-            Gobadi is building a unified digital ecosystem where animal care
+            Gobadi is building a unified digital ecosystem where animal care 
             becomes faster, smarter, and more accessible.Our goal is to improve
             animal wellbeing through AI-driven insights, expert consultation,
             and trusted marketplace solutions.
@@ -25,9 +25,9 @@ const SmartLivestockHero = () => {
 
           {/* Inner div */}
 
-          <div className="flex mt-1.5">
-            <div>
-              <div className="flex gap-1 p-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-5">
+            <div className="flex flex-col gap-2">
+             <div className="flex gap-2 p-2">
                 <Image
                   src={"/hero/Frame.png"}
                   width={20}
@@ -38,7 +38,7 @@ const SmartLivestockHero = () => {
                 <div>
                   <h2 className="font-semibold">Animal Care Ecosystem</h2>
                   <p className="text-[14px] text-[#525252]">
-                    A complete platform for pet health, care <br /> guidance,
+                    A complete platform for pet health, care guidance,
                     and daily wellbeing support.
                   </p>
                 </div>
@@ -53,12 +53,12 @@ const SmartLivestockHero = () => {
                   className="h-5"></Image>
                 <h2> </h2>
                 <div>
-                  <h2 className="font-semibold">
+                  <h2 className="font-semibold text-sm sm:text-base">
                     AI-Powered Insights & Marketplace
                   </h2>
-                  <p className="text-[14px] text-[#525252]">
-                    Smart AI results for better decisions, plus a marketplace{" "}
-                    <br /> for services, products, and care solutions.
+                <p className="text-[13px] sm:text-[14px] text-[#525252] leading-[1.5]">
+                    Smart AI results for better decisions, plus a marketplace <br />
+                    for services, products, and care solutions.
                   </p>
                 </div>
               </div>
@@ -75,9 +75,10 @@ const SmartLivestockHero = () => {
                   className="h-5"></Image>
                 <h2> </h2>
                 <div>
-                  <h2 className="font-semibold">Doctor Consultation Network</h2>
-                  <p className="text-[14px] text-[#525252]">
-                    Instant access to veterinary professionals <br /> for
+                     <h2 className="font-semibold text-sm sm:text-base">
+                    Doctor Consultation Network</h2>
+                   <p className="text-[13px] sm:text-[14px] text-[#525252] leading-[1.5]">
+                    Instant access to veterinary professionals for
                     reliable diagnosis and treatment advice.
                   </p>
                 </div>
@@ -89,7 +90,15 @@ const SmartLivestockHero = () => {
 
 
         {/* Right Side */}
-        <div className="relative w-120 h-150 ">
+         <div
+          className="
+            relative
+            w-full
+            max-w-[480px]
+            mx-auto
+            aspect-[4/5]
+          "
+        >
           <Image
             src="/hero/Rectangle-16.png"
             width={40}
