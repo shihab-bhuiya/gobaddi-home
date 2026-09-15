@@ -96,9 +96,22 @@ const HeroSection = () => {
   <div className="relative rounded-[24px] min-h-[380px] overflow-hidden">
     <Image src={handPhoneBg} alt="hand-phone-bg" fill className="object-fill rounded-lg" />
 
-      <Image src={handPhone} alt="hand-phone" width={247.2023468017578} height={446} className="absolute w-[247.2023468017578px] h-auto top-[42%] left-[46%] -translate-x-1/2 -translate-y-1/2" />
+<Image
+  src={handPhone}
+  alt="hand-phone"
+  width={247}
+  height={446}
+  className="
+    absolute
+    w-full
+    h-[60%]
+    bottom-0
+    left-[46%]
+    -translate-x-1/2
+  "
+/>
 
-      <Image src={phone} alt="phone" width={610} height={446} className="absolute w-auto h-auto top-[42%] left-[46%] -translate-x-1/2 -translate-y-1/2" />
+      <Image src={phone} alt="phone" width={610} height={446} className="absolute w-[20%] h-[27%] bottom-[11%]  left-32 -translate-x-1/2 -translate-y-1/2" />
 
 
   </div>
