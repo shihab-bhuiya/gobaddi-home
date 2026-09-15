@@ -122,11 +122,17 @@ const HeroSection = () => {
 
 
 {/* second row right side */}
-<div className="min-h-[380px]">
+<div className="min-h-[380px] ">
 
   <Image src={bg} alt="bg" width={500} height={300} className="object-fill rounded-lg min-h-[380px]" />
 
-  
+    <p className="text-xl font-medium absolute top-[55%] left-[60%]">
+      <span className="pl-27">AI-powered digital platform </span> <br />
+      <span className="pl-26.5">transforming the livestock </span><br />
+      <span className="pl-22">eco-system by connecting </span><br />
+      <span className="pl-12">farmers, veterinarians, and also</span> <br />
+      <span className="pl- ">trusted providers in one place.</span> <br />
+    </p>
 
 </div>
 
@@ -135,7 +141,7 @@ const HeroSection = () => {
 
    <Image src={logo} alt="logo" width={250} height={200} className="absolute top-[50%] left-[52%] -translate-x-1/2 -translate-y-1/2 object-fill rounded-lg min-h-[30%]" />
 
-
+  
 
     </section>
   );
