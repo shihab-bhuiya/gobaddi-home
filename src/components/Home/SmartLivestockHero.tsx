@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SmartLivestockHero = () => {
   return (
-    <section className="w-full relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <section className="w-full relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
       <div className="flex">
         {/* Left Side */}
         <div className="max-w-2xl">
@@ -86,14 +86,16 @@ const SmartLivestockHero = () => {
           </div>
         </div>
 
+
+
         {/* Right Side */}
-        <div className="relative w-50 h-50">
+        <div className="relative w-120 h-150 ">
           <Image
             src="/hero/Rectangle-16.png"
-            width={50}
-            height={700}
+            width={40}
+            height={0}
             alt="rectangle"
-            className="pl-14 top-6 w-120 h-60  left-9"
+            className="pl-14 absolute top-20 w-80 h-60  left-9"
           />
 
           <Image
@@ -101,7 +103,7 @@ const SmartLivestockHero = () => {
             width={30}
             height={30}
             alt="rectangle"
-            className="absolute w-60 h-60 top-0 right-5"
+            className="absolute w-60 h-60  bottom-[60%] left-36"
           />
            <Image
             src="/hero/Rectangle-20.svg"
@@ -116,7 +118,7 @@ const SmartLivestockHero = () => {
             width={30}
             height={30}
             alt="ful3333"
-            className="absolute bottom-0 left-3"
+            className="absolute bottom-[35%] w-25 h-25 left-[25%]"
           />
 
           <Image
@@ -124,33 +126,26 @@ const SmartLivestockHero = () => {
             width={30}
             height={30}
             alt="ful"
-            className="absolute bottom-0 right-3"
+            className="absolute top-0 right-5 w-10 h-10"
           />
 
 
-          {/* <Image
-            src="/hero/Rectangle-17.png.png"
-            width={30}
-            height={30}
-            alt="ful2"
-            className="absolute bottom-0 right-0"
-          /> */}
-
+       
 
 <Image
-    src="/hero/Rectangle-19.png.png"
+    src="/hero/Rectangle-19.svg"
     width={30}
     height={30}
     alt="ellipse"
-    className="absolute bottom-0 right-0"
+    className="absolute bottom-[40%] left-[80%] w-50 h-50 right-[10%]"
   />
 
   <Image
-    src="/hero/Rectangle-18.png.png"
+    src="/hero/Rectangle-18.svg"
     width={30}
     height={30}
     alt="ellipse"
-    className="absolute bottom-0 right-0"
+    className="absolute bottom-0 w-80 h-80 right-16"
   />
 
         </div>
