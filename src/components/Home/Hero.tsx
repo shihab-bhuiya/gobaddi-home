@@ -6,10 +6,12 @@ import LaunchImage from "../../../public/hero/near-to-launch.png";
 import handPhoneBg from "../../../public/hero/hand-phone-bg.png";
 import handPhone from "../../../public/hero/handPhone.png";
 import phone from "../../../public/hero/Home-Phone.png";
+import bg from "../../../public/hero/bg.png"
+import logo from "../../../public/hero/Ellipse.png"
 
 const HeroSection = () => {
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <section className="w-full relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
 
       {/* First row */}
 <div className="flex flex-col md:flex-row gap-4">
@@ -72,8 +74,8 @@ const HeroSection = () => {
 {/* second row */}
 
 
-    <div className="flex justify-between mt-4">
-      <div className="grid grid-cols-2 gap-6">
+<div className="flex justify-between mt-4 h-auto">
+  <div className="grid grid-cols-2 gap-6">
 
   {/* Left column */}
   <div className="flex flex-col gap-4">
@@ -85,7 +87,7 @@ const HeroSection = () => {
     </div>
 
     {/* Launch */}
-    <div className="relative rounded-[24px] border border-[#C0612B] h-[130px]">
+      <div className="relative rounded-[24px] h-[130px]">
    
       <Image src={LaunchImage} alt="launch-image" fill className="absolute inset-0 object-fill rounded-lg" />
     </div>
@@ -120,13 +122,18 @@ const HeroSection = () => {
 
 
 {/* second row right side */}
-<div>
-  <h2>Second Row Content</h2>
+<div className="min-h-[380px]">
+
+  <Image src={bg} alt="bg" width={500} height={300} className="object-fill rounded-lg min-h-[380px]" />
+
+  
+
 </div>
 
 
     </div>
 
+   <Image src={logo} alt="logo" width={250} height={200} className="absolute top-[50%] left-[52%] -translate-x-1/2 -translate-y-1/2 object-fill rounded-lg min-h-[30%]" />
 
 
 
