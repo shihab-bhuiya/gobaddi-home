@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WhoWeAreCards = () => {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative ">
       
       {/* Background */}
       <div
@@ -49,7 +49,7 @@ const WhoWeAreCards = () => {
               h-[230px]
               w-full
               max-w-[300px]
-              overflow-hidden
+            
               rounded-[20px]
               sm:mx-0
               sm:h-[250px]

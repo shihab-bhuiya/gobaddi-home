@@ -35,6 +35,7 @@ const ComingSoon = () => {
               text-[#171717]
               sm:text-5xl
               lg:text-[52px]
+              font-[Audiowide]
             "
           >
             Something
@@ -49,6 +50,7 @@ const ComingSoon = () => {
               inline-block
               rounded-[9px]
               border-[4px]
+              bg-[#C0612B]
               border-[#C0612B]
               px-1
               py-1
@@ -64,23 +66,26 @@ const ComingSoon = () => {
                 text-[#C0612B]
                 sm:text-[44px]
                 lg:text-[48px]
+                
               "
             >
-              Coming
-              <br />
-              Soon
+            <p className="text-white m"> Coming </p> 
+              
+              <div className=" flex gap-1 text-6xl  p-2"> 
+              <p className="bg-white gap-1  rounded-[6px]">S</p><p className="bg-white rounded-[6px] ">O</p>
+              <p className="bg-white rounded-[6px]">O</p ><p className="bg-white rounded-[6px]">N</p> </div>
             </h3>
           </div>
 
           <p
             className="
               mt-6
-              max-w-[350px]
-              text-xl
+              max-w-87.5
+              text-16
               font-semibold
-              leading-[1.25]
+              leading-tight
               text-[#171717]
-              sm:text-2xl
+              sm:text-2xl 
             "
           >
             Our new and improved

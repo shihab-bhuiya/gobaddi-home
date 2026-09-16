@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
+
+
 const ContactSection = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -28,29 +30,29 @@ const ContactSection = () => {
   };
 
   return (
-    <footer className="relative overflow-hidden bg-[#C0612B] text-white">
+    <footer className="relative bg-[#C0612B] text-white rounded-t-2xl">
 
       {/* ================= TOP CURVE ================= */}
-      <div
-        className="
-          absolute
-          left-1/2
-          top-[-35px]
-          h-[70px]
-          w-[115%]
-          -translate-x-1/2
-          rounded-[50%]
-          bg-[#faf9f7]
-        "
+     <div className="absolute left-0 top-0 z-0 w-full -translate-y-[55%]">
+      <Image
+        src="/hero/BG Wave.svg"
+        alt="Footer wave"
+        width={1440}
+        height={116}
+        className="h-auto w-full"
       />
+    </div>
+   
 
       {/* ================= CONTACT CONTENT ================= */}
+      
       <div
         className="
           relative
           mx-auto
           w-full
           max-w-[1140px]
+          bg-[#C0612B]
           px-6
           pb-10
           pt-20
