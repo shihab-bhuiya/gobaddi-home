@@ -152,22 +152,24 @@ const HeroSection = () => {
               ">
               <h2
                 className="
-                  p-5
+                  pl-16
                   pt-10
+                  text-7xl
                   font-bold
-                  leading-none
-                  sm:p-6
-                  sm:pt-12
+                  leading-16
+                  tracking-[8%]
                   md:p-8
                   md:pt-14
+                  lg:text-6xl 
+                  lg:font-extrabold
                 ">
                 <span
                   className="
-                    text-[42px]
+                    
+                    font-bold
+                    font-[Tusker-Grotesk]
                     text-[#000000]
-                    sm:text-[50px]
-                    md:text-[58px]
-                    lg:text-[64px]
+                  
                   ">
                   STAY
                 </span>
@@ -176,11 +178,11 @@ const HeroSection = () => {
 
                 <span
                   className="
-                    text-[42px]
+                    font-[Tusker-Grotesk]
+                    font-bold
+                 
                     text-white
-                    sm:text-[50px]
-                    md:text-[58px]
-                    lg:text-[64px]
+                  
                   ">
                   Tuned...
                 </span>
@@ -295,9 +297,10 @@ const HeroSection = () => {
           <p
             className="
     absolute
-    left-[40%]
-    top-[30%]
+    left-[38%]
+    top-[31%]
     w-full
+    leading-8
     -translate-x-1/2
     -translate-y-1/2
     text-center
@@ -309,30 +312,31 @@ const HeroSection = () => {
     md:tracking-tight
     md:font-semibold  
     md:text-[11px]
-    lg:leading-[100%]
-    lg:text-xl
+    lg:left-[38%]
+    lg:leading-10
+    lg:text-[22px]
   ">
-            <span className="block  md:pl-20 lg:pl-52">
+            <span className="pl-[46%] md:pl-20 lg:pl-52">
               AI-powered digital platform
             </span>
             <br />
 
-            <span className="block sm:pl-8 md:pl-16 lg:pl-45">
+            <span className=" pl-[38%] md:pl-16 lg:pl-45">
               transforming the livestock
             </span>
             <br />
 
-            <span className="block sm:pl-4 md:pl-8 lg:pl-30">
+            <span className=" pl-[28%] md:pl-8 lg:pl-30">
               eco-system by connecting
             </span>
             <br />
 
-            <span className="block sm:pl- md:pl-4 lg:pl-12">
+            <span className="pl-[15%] md:pl-4 lg:pl-12">
               farmers, veterinarians, and also
             </span>
             <br />
 
-            <span className="block sm:pl-0 md:pl-[1px] lg:pl-0">
+            <span className=" md:pl-[1px] lg:pl-0">
               trusted providers in one place.
             </span>
             <br />

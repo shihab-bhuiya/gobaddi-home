@@ -146,7 +146,7 @@ const SmartLivestockHero = () => {
     width={30}
     height={30}
     alt="ellipse"
-    className="absolute bottom-[40%] left-[80%] w-50 h-50 right-[10%]"
+    className="absolute lg:bottom-[40%] lg:left-[80%] w-50 h-50 lg:right-[10%]"
   />
 
   <Image
