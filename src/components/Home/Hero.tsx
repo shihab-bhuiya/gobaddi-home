@@ -306,14 +306,13 @@ const HeroSection = () => {
     sm:text-base
     md:pt-0.5
     md:w-[95%]
-    
     md:tracking-tight
-    md:font-semibold
+    md:font-semibold  
     md:text-[11px]
     lg:leading-[100%]
     lg:text-xl
   ">
-            <span className="block md:pl-20 lg:pl-52">
+            <span className="block  md:pl-20 lg:pl-52">
               AI-powered digital platform
             </span>
             <br />
@@ -333,7 +332,7 @@ const HeroSection = () => {
             </span>
             <br />
 
-            <span className="sm:pl-0 md:pl-[1px] lg:pl-0">
+            <span className="block sm:pl-0 md:pl-[1px] lg:pl-0">
               trusted providers in one place.
             </span>
             <br />
