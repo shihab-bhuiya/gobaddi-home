@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Zap } from "lucide-react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,35 +40,36 @@ const NavBar = () => {
 
             <ul className="flex items-center gap-6">
               <li>
-                <a
-                  href="#home"
-                  className="text-[15px] transition hover:text-[#C0612B]"
+                <Link
+                  href="/home"
+                  className="text-[18px] font-['SF_Pro'] font-extrabold leading-[120%] tracking-[0%] text-[#171717] transition hover:text-[#C0612B]"
                 >
                   Home
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="#about"
-                  className="text-[15px] text-[#737373] transition hover:text-[#C0612B]"
+                <Link
+                  href="/about"
+                  className="text-[16px] font-['SF_Pro'] font-medium text-[#737373] transition hover:text-[#C0612B]"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="#vision"
-                  className="text-[15px] text-[#737373] transition hover:text-[#C0612B]"
+                <Link
+                  href="/vision"
+                   className="text-[14px] font-['SF_Pro'] font-medium text-[#737373] transition hover:text-[#C0612B]"
                 >
                   Our Vision
-                </a>
+                </Link>
               </li>
             </ul>
 
             <Button variant="navBtn">
-              Contact Us
+
+            <Zap/>  Contact Us
             </Button>
           </div>
 
@@ -144,8 +146,8 @@ const NavBar = () => {
                 onClick={closeMenu}
                 className="
                   rounded-lg
-                  px-4
-                  py-3
+                  px-2
+                  py-1
                   text-sm
                   font-semibold
                   text-[#737373]
@@ -156,14 +158,19 @@ const NavBar = () => {
               >
                 Our Vision
               </a>
+   
+
 
               <Button
                 variant="navBtn"
-                className="mt-2 w-full"
+                className="mt-2 w-full "
                 onClick={closeMenu}
               >
+              <Zap />
                 Contact Us
               </Button>
+
+           
 
             </div>
           </div>

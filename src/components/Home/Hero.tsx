@@ -1,3 +1,5 @@
+/** @format */
+
 import Image from "next/image";
 import heroRightImg from "../../../public/hero/card-bg-of-cow.jpg";
 import heroLeftImg from "../../../public/hero/hero-left-img.jpg";
@@ -12,10 +14,8 @@ import logo from "../../../public/hero/Ellipse.png";
 const HeroSection = () => {
   return (
     <section className="relative mx-auto mt-8 w-full max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8">
-
       {/* First row */}
       <div className="flex flex-col gap-4 md:flex-row">
-
         {/* LEFT - 60% */}
         <div
           className="
@@ -28,8 +28,7 @@ const HeroSection = () => {
             md:h-[350px]
             md:flex-[6]
             lg:h-[380px]
-          "
-        >
+          ">
           <Image
             src={heroLeftImg}
             alt="hero-left-img"
@@ -40,28 +39,32 @@ const HeroSection = () => {
           <div
             className="
               absolute
-              left-[30%]
+              left-[36%]
               top-[40%]
               -translate-x-1/2
               -translate-y-1/2
-              sm:left-[32%]
-              md:left-[34%]
+            
+              md:left-[38%]
               lg:left-[36%]
-            "
-          >
+            ">
             <h2
               className="
-                text-[28px]
+                text-[36px]
                 font-bold
-                leading-[1.15]
-                sm:text-[36px] text-center pl-2
-                md:text-[46px]
-                lg:text-[60px]
-              "
-            >
+           
+                font-['Tusker_Grotesk]
+                italic
+            
+                sm:text-[40px]
+                md:text-[42px]
+                lg:text-[50px] 
+                tracking-[8%]
+                leading-[140%]
+                
+              ">
               Where <span className="text-[#C0612B]">Livestock</span>
               <br />
-              <span>Meets </span>
+              <span className="">Meets </span>
               <br />
               <span className="text-[#C0612B]">Intelligence</span>
             </h2>
@@ -79,9 +82,7 @@ const HeroSection = () => {
             md:h-[350px]
             md:flex-[4]
             lg:h-[380px]
-          "
-        >
-
+          ">
           {/* Background */}
           <Image
             src={heroRightImg}
@@ -108,10 +109,8 @@ const HeroSection = () => {
               lg:w-[100%]
             "
           />
-
         </div>
       </div>
-
 
       {/* second row */}
 
@@ -123,9 +122,7 @@ const HeroSection = () => {
           gap-4
           md:flex-row
           md:justify-between
-        "
-      >
-
+        ">
         <div
           className="
             grid
@@ -137,12 +134,9 @@ const HeroSection = () => {
             md:grid-cols-2
             md:gap-4
             lg:w-auto
-          "
-        >
-
+          ">
           {/* Left column */}
           <div className="flex flex-col gap-4">
-
             {/* Stay Tuned */}
             <div
               className="
@@ -155,8 +149,7 @@ const HeroSection = () => {
                 md:h-[258px]
                 md:w-[280px]
                 lg:w-[300px]
-              "
-            >
+              ">
               <h2
                 className="
                   p-5
@@ -167,8 +160,7 @@ const HeroSection = () => {
                   sm:pt-12
                   md:p-8
                   md:pt-14
-                "
-              >
+                ">
                 <span
                   className="
                     text-[42px]
@@ -176,8 +168,7 @@ const HeroSection = () => {
                     sm:text-[50px]
                     md:text-[58px]
                     lg:text-[64px]
-                  "
-                >
+                  ">
                   STAY
                 </span>
 
@@ -190,8 +181,7 @@ const HeroSection = () => {
                     sm:text-[50px]
                     md:text-[58px]
                     lg:text-[64px]
-                  "
-                >
+                  ">
                   Tuned...
                 </span>
               </h2>
@@ -209,8 +199,7 @@ const HeroSection = () => {
                 md:h-[130px]
                 md:w-[280px]
                 lg:w-[300px]
-              "
-            >
+              ">
               <Image
                 src={LaunchImage}
                 alt="launch-image"
@@ -218,9 +207,7 @@ const HeroSection = () => {
                 className="absolute inset-0 rounded-lg object-fill"
               />
             </div>
-
           </div>
-
 
           {/* Right column */}
           <div
@@ -234,8 +221,7 @@ const HeroSection = () => {
               md:min-h-[380px]
               md:w-[280px]
               lg:w-[300px]
-            "
-          >
+            ">
             <Image
               src={handPhoneBg}
               alt="hand-phone-bg"
@@ -244,26 +230,26 @@ const HeroSection = () => {
             />
 
             <Image
-              src={handPhone}
+              src={"/hero/full-hand.svg"}
               alt="hand-phone"
               width={247}
-              height={446}
+              height={486}
               className="
                 absolute
                 bottom-0
                 left-[46%]
-                h-[60%]
-                w-[95%]
+                h-[90%]
+                w-full
                 -translate-x-1/2
                 sm:h-[62%]
                 sm:w-[95%]
                 md:h-[60%]
                 md:w-full
-                lg:h-[60%]
+                lg:h-[85%]
               "
             />
 
-            <Image
+            {/* <Image
               src={phone}
               alt="phone"
               width={610}
@@ -283,11 +269,9 @@ const HeroSection = () => {
                 lg:left-32
                 lg:w-[20%]
               "
-            />
+            /> */}
           </div>
-
         </div>
-
 
         {/* second row right side */}
 
@@ -300,9 +284,7 @@ const HeroSection = () => {
             md:min-h-[380px]
             md:w-[40%]
             lg:w-[42%]
-          "
-        >
-
+          ">
           <Image
             src={bg}
             alt="bg"
@@ -312,61 +294,61 @@ const HeroSection = () => {
 
           <p
             className="
-              absolute
-              left-[50%]
-              top-[55%]
-              w-[90%]
-              -translate-x-1/2
-              -translate-y-1/2
-              text-center
-              text-sm
-              font-medium
-              sm:text-base
-              md:left-[60%]
-              md:w-[85%]
-              md:text-lg
-              lg:text-xl
-            "
-          >
-            <span className="md:pl-27">
+    absolute
+    left-[40%]
+    top-[30%]
+    w-full
+    -translate-x-1/2
+    -translate-y-1/2
+    text-center
+    text-sm
+    font-medium
+    sm:text-base
+    md:pt-0.5
+    md:w-[95%]
+    
+    md:tracking-tight
+    md:font-semibold
+    md:text-[11px]
+    lg:leading-[100%]
+    lg:text-xl
+  ">
+            <span className="block md:pl-20 lg:pl-52">
               AI-powered digital platform
             </span>
             <br />
 
-            <span className="md:pl-26.5">
+            <span className="block sm:pl-8 md:pl-16 lg:pl-45">
               transforming the livestock
             </span>
             <br />
 
-            <span className="md:pl-22">
+            <span className="block sm:pl-4 md:pl-8 lg:pl-30">
               eco-system by connecting
             </span>
             <br />
 
-            <span className="md:pl-12">
+            <span className="block sm:pl- md:pl-4 lg:pl-12">
               farmers, veterinarians, and also
             </span>
             <br />
 
-            <span>
+            <span className="sm:pl-0 md:pl-[1px] lg:pl-0">
               trusted providers in one place.
             </span>
             <br />
           </p>
-
         </div>
-
       </div>
-
 
       {/* Center Logo */}
 
-     <Image
-  src={logo}
-  alt="logo"
-  width={250}
-  height={200}
-  className="
+      <Image
+        src={logo}
+        alt="logo"
+        width={250}
+        height={200}
+        className="
     hidden
     sm:block
     absolute
@@ -381,7 +363,7 @@ const HeroSection = () => {
     md:w-[180px]
     lg:w-[250px]
   "
-/>
+      />
     </section>
   );
 };
