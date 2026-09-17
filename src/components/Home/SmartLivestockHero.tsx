@@ -12,7 +12,7 @@ const SmartLivestockHero = () => {
             OUR VISIONS
           </button>
 
-          <h1 className="font-[SF_Pro] font-bold leading-16 lg:text-[56px] mt-2 text-[30px] ">
+          <h1 className="font-[SF_Pro] font-bold leading-12 lg:leading-16 lg:text-[56px] mt-2 text-[30px] ">
             Empowering Smarter <br /> Animal Care Through AI
           </h1>
 
