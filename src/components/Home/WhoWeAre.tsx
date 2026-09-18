@@ -1,13 +1,13 @@
-/** @format */
+
 
 import Image from "next/image";
 
 
 export default function WhoWeAre() {
   return (
-    <section className="relative w-full overflow-hidden pb-24 pt-20">
+    <section className="relative w-full overflow-hidden pb-16 pt-16">
       {/* Layer 1: Sky (no clouds) - fills entire section */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-x-0 top-0 z-0 h-[85%]">
         <Image
           src="sky.svg" // TODO: sky.svg path
           alt="Sky background"
@@ -18,7 +18,7 @@ export default function WhoWeAre() {
       </div>
 
       {/* Layer 2: Field - pinned to bottom */}
-      <div className="absolute bottom-0 left-0 z-10 h-[45%] w-full">
+      <div className="absolute bottom-0 left-0 z-10 h-[40%] w-full">
         <Image
           src="/field.svg" // TODO: field image path
           alt="Field"
@@ -47,43 +47,37 @@ export default function WhoWeAre() {
       </div>
 
      {/* Layer 4: Cards - straddles the sky/field seam */}
-      <div className="relative z-30 mx-auto mt-16 h-[340px] max-w-4xl px-4 md:h-[400px] ">
+      <div className="relative z-30 mx-auto mt-12 grid w-full max-w-6xl grid-cols-1 items-start justify-items-center gap-6 px-4 sm:mt-16 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
         {/* Card 1 - left, sits a bit lower than the middle card */}
-        <div
-          className="absolute h-64 w-52 -translate-x-1/2 overflow-hidden rounded-[2rem] shadow-lg md:h-72 md:w-60"
-          style={{ left: "22%", top: "8%" }}
-        >
+        <div className="relative aspect-[420/340] w-full max-w-[420px] overflow-hidden rounded-xl shadow-lg sm:rounded-[2rem] lg:mt-10">
           <Image
-            src="/card/card-1.svg" // TODO: farmer with lamb image
+            src="/card/card-1.svg"
             alt="Farmer holding a lamb"
             fill
+            sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 420px"
             className="object-cover"
           />
         </div>
- 
+
         {/* Card 2 - middle, highest card (least offset) */}
-        <div
-          className="absolute h-64 w-52 -translate-x-1/2 overflow-hidden rounded-[2rem] shadow-lg md:h-72 md:w-60"
-          style={{ left: "50%", top: "0%" }}
-        >
+        <div className="relative aspect-[420/340] w-full max-w-[420px] overflow-hidden rounded-xl shadow-lg sm:rounded-[2rem] lg:mt-4">
           <Image
             src="/card/card-2.svg" // TODO: vet checking cattle image
             alt="Veterinarian examining livestock"
             fill
+            sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 420px"
             className="object-cover"
           />
         </div>
- 
+
         {/* Card 3 - right, sits a bit lower than card 1 */}
-        <div
-          className="absolute h-64 w-52 -translate-x-1/2 overflow-hidden rounded-[2rem] shadow-lg md:h-72 md:w-60"
-          style={{ left: "78%", top: "16%" }}
-        >
+        <div className="relative aspect-[420/340] w-full max-w-[420px] overflow-hidden rounded-xl shadow-lg sm:rounded-[2rem] md:col-span-2 md:mx-auto lg:col-span-1 lg:mt-28">
           <Image
             src="/card/card-3.svg" // TODO: farmer holding turkey image
             alt="Farmer holding poultry"
             fill
-            className="object-cover"
+            sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 420px"
+            className="object-cover object-[center_25%]"
           />
         </div>
       </div>
