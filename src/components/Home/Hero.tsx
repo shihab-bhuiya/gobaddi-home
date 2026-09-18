@@ -6,8 +6,6 @@ import heroLeftImg from "../../../public/hero/hero-left-img.jpg";
 import HerCow from "../../../public/hero/hero-right-cow.png";
 import LaunchImage from "../../../public/hero/near-to-launch.png";
 import handPhoneBg from "../../../public/hero/hand-phone-bg.png";
-import handPhone from "../../../public/hero/handPhone.png";
-import phone from "../../../public/hero/Home-Phone.png";
 import bg from "../../../public/hero/bg.png";
 import logo from "../../../public/hero/Ellipse.png";
 
@@ -57,7 +55,7 @@ const HeroSection = () => {
             
                 sm:text-[40px]
                 md:text-[42px]
-                lg:text-[50px] 
+                lg:text-[48px] 
                 tracking-[8%]
                 leading-[140%]
                 
@@ -73,43 +71,46 @@ const HeroSection = () => {
 
         {/* RIGHT - 40% */}
         <div
-          className="
-            relative
-            h-[260px]
-            w-full
-            rounded-lg
-            sm:h-[300px]
-            md:h-[350px]
-            md:flex-[4]
-            lg:h-[380px]
-          ">
-          {/* Background */}
-          <Image
-            src={heroRightImg}
-            alt="hero-right-img"
-            fill
-            className="rounded-lg object-fill"
-          />
+  className="
+    relative
+    h-[260px]
+    w-full
+    rounded-lg
+    sm:h-[300px]
+    md:h-[350px]
+    md:flex-[4]
+    lg:h-[380px]
+  ">
+  {/* Background */}
+  <Image
+    src={heroRightImg}
+    alt="hero-right-img"
+    fill
+    className="rounded-lg object-fill"
+  />
 
-          {/* Cow */}
-          <Image
-            src={HerCow}
-            alt="hero-cow"
-            width={610}
-            height={446}
-            className="
-              absolute
-              left-[46%]
-              top-[42%]
-              w-[105%]
-              -translate-x-1/2
-              -translate-y-1/2
-              sm:w-[105%]
-              md:w-[105%]
-              lg:w-[100%]
-            "
-          />
-        </div>
+  {/* Cow — anchored to bottom, allowed to overflow past the box */}
+  <Image
+    src={HerCow}
+    alt="hero-cow"
+    width={610}
+    height={426}
+    className="
+      absolute
+      bottom-0
+      left-5/12
+      bottom-8
+      
+      z-10
+      w-[75%]
+      -translate-x-1/2
+      translate-y-[6%]
+   
+      md:w-[95%]
+      lg:w-[92%]
+    "
+  />
+</div>
       </div>
 
       {/* second row */}
@@ -251,27 +252,7 @@ const HeroSection = () => {
               "
             />
 
-            {/* <Image
-              src={phone}
-              alt="phone"
-              width={610}
-              height={446}
-              className="
-                absolute
-                bottom-[11%]
-                left-[35%]
-                h-auto
-                w-[24%]
-                -translate-x-1/2
-                -translate-y-1/2
-                sm:left-[34%]
-                sm:w-[23%]
-                md:left-[35%]
-                md:w-[22%]
-                lg:left-32
-                lg:w-[20%]
-              "
-            /> */}
+    
           </div>
         </div>
 
@@ -285,7 +266,7 @@ const HeroSection = () => {
             sm:min-h-[350px]
             md:min-h-[380px]
             md:w-[40%]
-            lg:w-[42%]
+            lg:w-[47%]
           ">
           <Image
             src={bg}
