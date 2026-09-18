@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ComingSoon = () => {
   return (
-    <section className="relative overflow-hidden bg-[#faf9f7]">
+      <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
       <div
         className="
           mx-auto
@@ -28,14 +28,15 @@ const ComingSoon = () => {
         <div className="w-full max-w-[430px]">
           <h2
             className="
-              text-4xl
-              font-bold
+              font-[Audiowide]
+              text-[87px]
+              font-[400]
+             lg: w-[482px]
               leading-[0.95]
               tracking-tight
               text-[#171717]
               sm:text-5xl
               lg:text-[52px]
-              font-[Audiowide]
             "
           >
             Something
@@ -50,42 +51,60 @@ const ComingSoon = () => {
               inline-block
               rounded-[9px]
               border-[4px]
-              bg-[#C0612B]
               border-[#C0612B]
-              px-1
-              py-1
+              bg-[#C0612B]
+              px-3
+              py-2
             "
           >
-            <h3
+            <p
               className="
-                text-[38px]
+                text-[96px]
                 font-extrabold
+                font-[Audiowide]
                 uppercase
                 leading-[0.82]
                 tracking-tight
-                text-[#C0612B]
+                text-white
                 sm:text-[44px]
-                lg:text-[48px]
-                
+                lg:text-[4]
               "
             >
-            <p className="text-white m"> Coming </p> 
-              
-              <div className=" flex gap-1 text-6xl  p-2"> 
-              <p className="bg-white gap-1  rounded-[6px]">S</p><p className="bg-white rounded-[6px] ">O</p>
-              <p className="bg-white rounded-[6px]">O</p ><p className="bg-white rounded-[6px]">N</p> </div>
-            </h3>
+              Coming
+            </p>
+
+            <div className="mt-1  flex gap-1.5 font-[Audiowide] text-[96px]">
+              {["S", "O", "O", "N"].map((letter, i) => (
+                <span
+                  key={i}
+                  className="
+                    rounded-[6px]
+                    bg-white
+                    px-2
+                    text-5xl
+                    font-extrabold
+                    uppercase
+                    leading-[0.82]
+                    text-[#C0612B]
+                    sm:text-6xl
+                    lg:text-[64px]
+                  "
+                >
+                  {letter}
+                </span>
+              ))}
+            </div>
           </div>
 
           <p
             className="
               mt-6
-              max-w-87.5
-              text-16
+              max-w-[350px]
+              text-base
               font-semibold
               leading-tight
               text-[#171717]
-              sm:text-2xl 
+              sm:text-2xl
             "
           >
             Our new and improved
@@ -94,7 +113,7 @@ const ComingSoon = () => {
           </p>
         </div>
 
-        {/* ================= CUSTOM PHONE IMAGE ================= */}
+        {/* ================= CUSTOM BLOB IMAGE ================= */}
         <div
           className="
             relative
@@ -110,15 +129,9 @@ const ComingSoon = () => {
           "
         >
           {/* SVG definition for the custom curved shape */}
-          <svg
-            className="absolute h-0 w-0"
-            aria-hidden="true"
-          >
+          <svg className="absolute h-0 w-0" aria-hidden="true">
             <defs>
-              <clipPath
-                id="livestockBlob"
-                clipPathUnits="objectBoundingBox"
-              >
+              <clipPath id="livestockBlob" clipPathUnits="objectBoundingBox">
                 <path
                   d="
                     M 1 0.16
@@ -158,30 +171,16 @@ const ComingSoon = () => {
             </defs>
           </svg>
 
-          {/* Orange border */}
+          {/* Orange border layer - full size, sits behind */}
           <div
-            className="
-              absolute
-              inset-0
-              overflow-hidden
-              bg-[#F28C28]
-            "
-            style={{
-              clipPath: "url(#livestockBlob)",
-            }}
+            className="absolute inset-0 overflow-hidden bg-[#F28C28]"
+            style={{ clipPath: "url(#livestockBlob)" }}
           />
 
-          {/* Image */}
+          {/* Single image, inset slightly to reveal the border ring */}
           <div
-            className="
-              absolute
-              inset-[5px]
-              overflow-hidden
-              bg-black
-            "
-            style={{
-              clipPath: "url(#livestockBlob)",
-            }}
+            className="absolute inset-[5px] overflow-hidden bg-black"
+            style={{ clipPath: "url(#livestockBlob)" }}
           >
             <Image
               src="/wow/image.png"
@@ -201,4 +200,4 @@ const ComingSoon = () => {
   );
 };
 
-export default ComingSoon;
+export default ComingSoon;  
