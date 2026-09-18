@@ -18,9 +18,7 @@ export default function Home() {
    <HeroSection/>
    <SmartLivestockHero/>
    <WhoWeAre/>
-  
    <ComingSoon/>
-
    <ContactSection/>
     </div>
   );
