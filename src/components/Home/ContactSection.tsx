@@ -1,10 +1,37 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { FaFacebook, FaInstagram, FaXTwitter, FaLinkedin } from "react-icons/fa6";
-import Link from "next/link";
+import { FaInstagram, FaXTwitter, FaLinkedin } from "react-icons/fa6";
+
+const contactItems = [
+  {
+    icon: Mail,
+    label: "Email",
+    value: "ceo.gobadi@gmail.com",
+    href: "mailto:ceo.gobadi@gmail.com",
+  },
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "+8801911418977",
+    href: "tel:+8801911418977",
+  },
+  {
+    icon: MapPin,
+    label: "Office",
+    value: "Road# 9, house# 5, Lane#3, Mirpur 11/a, Dhaka, 1216, Bangladesh.",
+    href: null,
+  },
+];
+
+const socials = [
+  { label: "Instagram", icon: FaInstagram },
+  { label: "X", icon: FaXTwitter },
+  { label: "LinkedIn", icon: FaLinkedin },
+];
 
 const ContactSection = () => {
   const [email, setEmail] = useState("");
@@ -12,17 +39,15 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     console.log({ email, message });
-
     setEmail("");
     setMessage("");
   };
 
   return (
-    <footer className="relative  rounded-t-2xl bg-[#C0612B] text-white">
+    <footer className="relative rounded-t-2xl bg-[#C0612B] font-[SF_Pro] text-white">
       {/* ================= TOP CURVE ================= */}
-      <div className="absolute left-0 top-0 z-0 w-full -translate-y-[65%]">
+      <div className="pointer-events-none absolute left-0 top-0 z-0 w-full -translate-y-[65%]">
         <Image
           src="/hero/BG Wave.svg"
           alt="Footer wave"
@@ -32,134 +57,120 @@ const ContactSection = () => {
         />
       </div>
 
-      {/* ================= BACKGROUND GRADIENT + DOT PATTERN ================= */}
-      <div className="absolute inset-0 z-0 overflow-hidden bg-gradient-to-b  " />
-   <div
-  className="absolute inset-0 z-0 overflow-hidden rounded-t-2xl opacity-[0.35]"
-  style={{
-    backgroundImage:
-      "radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 1.5px)",
-    backgroundSize: "16px 16px",
-    // this is the key part: mask the dots into a wide ellipse
-    maskImage:
-      "radial-gradient(ellipse 70% 55% at 50% 40%, black 0%, transparent 75%)",
-    WebkitMaskImage:
-      "radial-gradient(ellipse 70% 55% at 50% 40%, black 0%, transparent 75%)",
-  }}
-/>
+      {/* ================= DOT PATTERN ================= */}
+      <div
+        className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-t-2xl opacity-[0.35]"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 1.5px)",
+          backgroundSize: "16px 16px",
+          maskImage:
+            "radial-gradient(ellipse 70% 55% at 50% 40%, black 0%, transparent 75%)",
+          WebkitMaskImage:
+            "radial-gradient(ellipse 70% 55% at 50% 40%, black 0%, transparent 75%)",
+        }}
+      />
 
-      {/* ================= CONTACT CONTENT ================= */}
-      <div className="relative w-full max-w-full mx-auto lg:px-28 px-6    mt-10">
-        {/* ================= HEADING + SOCIAL ROW ================= */}
-        <div className="flex items-start justify-between gap-6">
+      {/* ================= CONTENT ================= */}
+      <div className="relative mx-auto w-full max-w-full px-5 pt-10 sm:px-8 lg:px-12">
+        {/* ---------- Heading + Social ---------- */}
+        <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="max-w-[500px]">
-            <div className="mb-3 inline-flex rounded-[200px] bg-white/90 px-3 py-1">
-              <span className="text-[18px] font-semibold font-[SF_Pro] uppercase tracking-wider text-[#C0612B]">
+            <div className="mb-3 inline-flex rounded-full bg-white/90 px-3 py-1">
+              <span className="text-sm font-semibold uppercase tracking-wider text-[#C0612B] sm:text-base lg:text-[18px]">
                 Contact Us
               </span>
             </div>
 
-            <h2 className="text-[56px] leading-[68px] font-[SF_Pro] font-semibold leading-tight sm:text-4xl">
+            <h2 className="text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl xl:text-[56px]">
               Let&apos;s stay connected
             </h2>
 
-            <p className="mt-2 max-w-[330px] text-[20px] font-[SF_Pro] leading-[30px] font-medium text-white/80">
+            <p className="mt-3 max-w-md text-base font-medium leading-relaxed text-white/80 sm:text-lg lg:max-w-[330px] lg:text-[20px] lg:leading-[30px]">
               Join the Gobadi community and be part of a smarter future for
               animal care.
             </p>
           </div>
 
-          {/* ================= SOCIAL (moved to top-right) ================= */}
-          <div className="flex flex-col  shrink-0 mt-26 pr-72">
-            <p className="mb-3 font-[SF_Pro] text-[18px] leading-[150%] font-medium">Follow Us On</p>
+          {/* Social */}
+          <div className="flex shrink-0 flex-col md:self-end md:pb-2 lg:pr-24 xl:pr-52">
+            <p className="mb-3 text-base font-medium sm:text-[18px]">
+              Follow Us On
+            </p>
 
             <div className="flex gap-2">
               <Link
                 href="#"
                 aria-label="Facebook"
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-[10px] text-[#C0612B]"
+                className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-white"
               >
-                <Image src={'/card/Facebook-Icon.svg'} alt="facebook" width={50} height={50} />
+                <Image
+                  src="/card/Facebook-Icon.svg"
+                  alt="Facebook"
+                  width={36}
+                  height={36}
+                  className="h-full w-full object-contain"
+                />
               </Link>
-              <Link
-                href="#"
-                aria-label="Instagram"
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-[10px]"
-              >
-                <FaInstagram  />
-              </Link>
-              <Link
-                href="#"
-                aria-label="X"
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-[10px]"
-              >
-                <FaXTwitter />
-              </Link>
-              <Link
-                href="#"
-                aria-label="LinkedIn"
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-[10px]"
-              >
-                <FaLinkedin />
-              </Link>
+
+              {socials.map(({ label, icon: Icon }) => (
+                <Link
+                  key={label}
+                  href="#"
+                  aria-label={label}
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-white/20 text-base transition hover:bg-white/30"
+                >
+                  <Icon />
+                </Link>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* ================= MAIN CONTENT ================= */}
-        <div className="mt-14 grid grid-cols-1 gap-10 pr-22 md:grid-cols-[1fr_360px] md:gap-16">
-          {/* ================= CONTACT DETAILS ================= */}
-          <div className="grid grid-cols-1 font-[SF_Pro] text-[30px] gap-7 sm:grid-cols-2">
-            {/* Email */}
-            <div className="flex gap-3 space-y-2">
-              <div>
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/50">
-                <Mail size={13} />
-              </div>
-                <p className="text-[22px] font-semibold">Email</p>
-                <p className=" text-[20px] text-white/80">
-                  ceo.gobadi@gmail.com
+        {/* ---------- Details + Form ---------- */}
+        <div className="mt-10 grid grid-cols-1 gap-10 lg:mt-14 lg:grid-cols-[1fr_380px] lg:gap-16">
+          {/* Contact details */}
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-7">
+            {contactItems.map((item) => {
+              const content = (
+                <p className="break-words text-base text-white/80 sm:text-lg lg:text-[20px]">
+                  {item.value}
                 </p>
-              </div>
-            </div>
+              );
 
-            {/* Phone */}
-            <div className="flex gap-3 space-y-2">
-              <div>
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/50">
-                                <Phone size={13} />
-
-              </div>
-                <p className="text-[22px] font-semibold">Phone</p>
-                <p className=" text-[20px] text-white/80">
-                  +8801911418977
-                </p>
-              </div>
-            </div>
-
-            {/* Office */}
-            <div className="flex gap-3 space-y-2">
-              <div>
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/50">
-                                               <MapPin size={13} />
-
-
-              </div>
-                <p className="text-[22px] font-semibold">Office</p>
-                <p className=" text-[20px] text-white/80">
-                  Road# 9 , house# 5 , Lane#3, Mirpur 11/a,
-                  Dhaka, 1216, Bangladesh.
-                </p>
-              </div>
-            </div>
+              return (
+                <div
+                  key={item.label}
+                  className={`min-w-0 ${
+                    item.label === "Office" ? "sm:col-span-2" : ""
+                  }`}
+                >
+                  <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-full border border-white/50">
+                    <item.icon size={16} />
+                  </div>
+                  <p className="text-lg font-semibold sm:text-xl lg:text-[22px]">
+                    {item.label}
+                  </p>
+                  {item.href ? (
+                    <a href={item.href} className="hover:text-white">
+                      {content}
+                    </a>
+                  ) : (
+                    content
+                  )}
+                </div>
+              );
+            })}
           </div>
 
-          {/* ================= FORM ================= */}
-          <div className="rounded-[16px] bg-white p-4 text-[#171717] shadow-lg sm:p-5">
-            <form onSubmit={handleSubmit} className="space-y-3">
-              {/* Email */}
+          {/* Form */}
+          <div className="w-full max-w-xl rounded-2xl bg-white p-5 text-[#171717] shadow-lg sm:p-6 lg:max-w-none">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="email" className="mb-1 block text-[12px] font-semibold">
+                <label
+                  htmlFor="email"
+                  className="mb-1 block text-sm font-semibold"
+                >
                   Email
                 </label>
                 <input
@@ -169,13 +180,15 @@ const ContactSection = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="pat@shuffle.dev"
-                  className="h-8 w-full rounded border border-neutral-200 px-3 text-[10px] text-neutral-800 placeholder:text-neutral-400 outline-none focus:border-[#C0612B]"
+                  className="h-11 w-full rounded border border-neutral-200 px-3 text-base text-neutral-800 outline-none placeholder:text-neutral-400 focus:border-[#C0612B] lg:h-10 lg:text-sm"
                 />
               </div>
 
-              {/* Message */}
-              <div className="mb-8">
-                <label htmlFor="message" className="mb-4 font-[SF_Pro] block text-[16px] font-semibold">
+              <div>
+                <label
+                  htmlFor="message"
+                  className="mb-1 block text-sm font-semibold"
+                >
                   Message
                 </label>
                 <textarea
@@ -184,29 +197,28 @@ const ContactSection = () => {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Your message..."
-                  className="h-[90px] w-full resize-none rounded border border-neutral-200 p-3 text-[10px] text-neutral-800 placeholder:text-neutral-400 outline-none focus:border-[#C0612B]"
+                  className="h-28 w-full resize-none rounded border border-neutral-200 p-3 text-base text-neutral-800 outline-none placeholder:text-neutral-400 focus:border-[#C0612B] lg:text-sm"
                 />
               </div>
 
-              {/* Button */}
               <button
                 type="submit"
-                className="flex h-8 w-full items-center justify-center gap-2 rounded bg-[#C0612B] text-[10px] font-semibold text-white transition hover:bg-[#a94f21]"
+                className="flex h-11 w-full items-center justify-center gap-2 rounded bg-[#C0612B] text-sm font-semibold text-white transition hover:bg-[#a94f21] lg:h-10"
               >
-                <Send size={11} />
+                <Send size={14} />
                 Send Email
               </button>
             </form>
           </div>
         </div>
 
-        {/* ================= LOGO ================= */}
-        <div className="mt-12 flex flex-col items-center">
+        {/* ---------- Logo + Links ---------- */}
+        <div className="mt-12 flex flex-col items-center pb-8 lg:mt-16">
           <div className="flex items-center gap-2">
             <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-md bg-white/10">
               <Image
                 src="/NavBar/NavLogo.png"
-                alt="Gobaddi-Logo"
+                alt="Gobadi logo"
                 height={32}
                 width={32}
                 className="object-contain"
@@ -215,19 +227,17 @@ const ContactSection = () => {
             <h2 className="text-2xl font-bold">গবাদি</h2>
           </div>
 
-          <div className="mt-2 font-[SF_Pro] text-[20px] leading-[30px] flex gap-5 text-[8px] text-white/90">
-            <a href="#" className="hover:text-white ">About Us</a>
+          <nav className="mt-2 flex flex-wrap justify-center gap-x-5 gap-y-2 text-base text-white/90 lg:text-[20px] lg:leading-[30px]">
+            <a href="#" className="hover:text-white">About Us</a>
             <a href="#" className="hover:text-white">Our Vision</a>
             <a href="#" className="hover:text-white">Contact Us</a>
-          </div>
+          </nav>
         </div>
       </div>
 
       {/* ================= COPYRIGHT ================= */}
-      <div className="relative z-10 border-t font-[SF_Pro] text-[16px] leading-[30px] border-white/30 py-4 text-center">
-        <p className=" text-white/80">
-          © 2026 gobadi. All rights reserved.
-        </p>
+      <div className="relative z-10 border-t border-white/30 px-5 py-2 text-center text-sm sm:text-base">
+        <p className="text-white/80">© 2026 gobadi. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -11,7 +11,7 @@ import logo from "../../../public/hero/Ellipse.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative mx-auto mt-8 w-full max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8">
+    <section className="relative mx-auto mt-8 w-full max-w-full px-3 sm:px-4 md:px-6 lg:px-8">
       {/* First row */}
       <div className="flex flex-col gap-4 md:flex-row">
         {/* LEFT - 60% */}
@@ -31,7 +31,7 @@ const HeroSection = () => {
             src={heroLeftImg}
             alt="hero-left-img"
             fill
-            className="rounded-lg object-fill"
+            className="rounded-lg  object-fill"
           />
 
           <div
@@ -51,20 +51,20 @@ const HeroSection = () => {
                 font-bold
            
                 font-['Tusker_Grotesk]
-                italic
+                
             
                 sm:text-[34px]
                 md:text-[42px]
-                lg:text-[48px] 
+                lg:text-[60px] 
                 tracking-[8%]
                 leading-[140%]
                 
               ">
-              Where <span className="text-[#C0612B]">Livestock</span>
+              Where <span className="text-[#C0612B] tracking-[4%] ">Livestock</span>
               <br />
               <span className="">Meets </span>
               <br />
-              <span className="text-[#C0612B]">Intelligence</span>
+              <span className="text-[#C0612B] tracking-[4%]">Intelligence</span>
             </h2>
           </div>
         </div>
@@ -75,11 +75,14 @@ const HeroSection = () => {
     relative
     h-[260px]
     w-full
+    lg:w-[370px]
     rounded-lg
     sm:h-[300px]
     md:h-[350px]
     md:flex-[4]
-    lg:h-[380px]
+    lg:h-[410px]
+
+    
   ">
   {/* Background */}
   <Image
@@ -93,21 +96,21 @@ const HeroSection = () => {
   <Image
     src={HerCow}
     alt="hero-cow"
-    width={820}
+    
     height={426}
     className="
       absolute
-      bottom-0
-      left-5/12
+    
+      left-[32%]
       bottom-12
       
       z-10
-      w-[95%]
+      w-[90%]
       -translate-x-[43%]
       translate-y-[10%]
    
       md:w-[100%]
-      lg:w-[125%]
+      lg:w-[80%]
     "
   />
 </div>
@@ -149,7 +152,7 @@ const HeroSection = () => {
                 sm:w-[280px]
                 md:h-[258px]
                 md:w-[280px]
-                lg:w-[300px]
+                lg:w-[340px]
               ">
               <h2
                 className="
@@ -201,7 +204,7 @@ const HeroSection = () => {
                 sm:w-[280px]
                 md:h-[130px]
                 md:w-[280px]
-                lg:w-[300px]
+                lg:w-[350px]
               ">
               <Image
                 src={LaunchImage}
@@ -223,7 +226,7 @@ const HeroSection = () => {
               sm:min-h-[350px]
               md:min-h-[380px]
               md:w-[280px]
-              lg:w-[300px]
+              lg:w-[365px]
             ">
             <Image
               src={handPhoneBg}
