@@ -72,10 +72,10 @@ const ContactSection = () => {
       />
 
       {/* ================= CONTENT ================= */}
-      <div className="relative mx-auto w-full max-w-full px-5 pt-10 sm:px-8 lg:px-12">
+      <div className="relative mx-auto w-full max-w-[1440px] px-5 pt-10 sm:px-8 lg:px-12">
         {/* ---------- Heading + Social ---------- */}
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
-          <div className="max-w-[500px]">
+          <div className="max-w-[1312px]">
             <div className="mb-3 inline-flex rounded-full bg-white/90 px-3 py-1">
               <span className="text-sm font-semibold uppercase tracking-wider text-[#C0612B] sm:text-base lg:text-[18px]">
                 Contact Us

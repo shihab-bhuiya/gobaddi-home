@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const SmartLivestockHero = () => {
   return (
-     <section className="relative w-full max-w-full mx-auto  px-6    mt-10">
-      <div className="grid grid-cols-1 max-w-full lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-8 items-center">
+     <section className="relative w-full max-w-[1440] mx-auto  px-6    mt-10">
+      <div className="grid grid-cols-1 max-w-[1312] lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-8 items-center">
         {/* Left Side */}
          <div className="w-full max-w-full  font-[SF_Pro] ">
           <button className="text-[#C0612B] border border-[#C0612B] rounded-2xl p-1 bg-[#FBE6DA] ">

@@ -11,7 +11,7 @@ import logo from "../../../public/hero/Ellipse.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative mx-auto mt-8 w-full max-w-full px-3 sm:px-4 md:px-6 lg:px-8">
+    <section className="relative mx-auto mt-8 w-full max-w-[1440px] px-3 sm:px-4 md:px-6 lg:px-8">
       {/* First row */}
       <div className="flex flex-col gap-4 md:flex-row">
         {/* LEFT - 60% */}
@@ -48,7 +48,7 @@ const HeroSection = () => {
             <h2
               className="
                 text-[34px]
-                font-bold
+                font-extrabold
            
                 font-['Tusker_Grotesk]
                 
@@ -56,7 +56,7 @@ const HeroSection = () => {
                 sm:text-[34px]
                 md:text-[42px]
                 lg:text-[60px] 
-                tracking-[8%]
+                tracking-[6%]
                 leading-[140%]
                 
               ">
@@ -64,7 +64,7 @@ const HeroSection = () => {
               <br />
               <span className="">Meets </span>
               <br />
-              <span className="text-[#C0612B] tracking-[4%]">Intelligence</span>
+              <span className="text-[#C0612B] tracking-[4%]">Intelligence </span>
             </h2>
           </div>
         </div>

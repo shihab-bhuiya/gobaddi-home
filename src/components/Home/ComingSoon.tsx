@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const ComingSoon = () => {
   return (
-    <section className="mx-auto mt-8 w-full max-w-full mb-16 px-6 md:px-10 lg:px-12">
-      <div className="flex flex-col items-center justify-between gap-12 py-14 md:flex-row md:gap-16">
+    <section className="mx-auto mt-8 w-full max-w-[1440] mb-16 px-6 md:px-10 lg:px-12">
+      <div className="flex flex-col max-w-[1376px] items-center justify-between gap-12 py-14 md:flex-row md:gap-16">
         {/* ================= LEFT CONTENT ================= */}
         <div className="w-full md:max-w-[600px]">
           <h2 className="font-[Audiowide] text-[44px] leading-[1.05] font-bold text-[#171717] sm:text-[56px] lg:text-[76px]">

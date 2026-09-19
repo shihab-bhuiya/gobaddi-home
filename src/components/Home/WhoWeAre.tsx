@@ -47,7 +47,7 @@ export default function WhoWeAre() {
       </div>
 
      {/* Layer 4: Cards - straddles the sky/field seam */}
-      <div className="relative z-30 mx-auto mt-12 grid w-full max-w-6xl grid-cols-1 items-start justify-items-center gap-6 px-4 sm:mt-16 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
+      <div className="relative z-30 mx-auto mt-12 grid w-full max-w-[1312px] grid-cols-1 items-start justify-items-center gap-6 px-4 sm:mt-16 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
         {/* Card 1 - left, sits a bit lower than the middle card */}
         <div className="relative aspect-[420/340] w-full max-w-[420px] overflow-hidden rounded-xl shadow-lg sm:rounded-[2rem] lg:mt-10">
           <Image
