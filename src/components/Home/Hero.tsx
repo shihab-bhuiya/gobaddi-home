@@ -101,16 +101,18 @@ const HeroSection = () => {
     className="
       absolute
     
-      left-[32%]
-      bottom-12
-      
+      left-40
+      md:left-[295px]
+      bottom-14
+      lg:left-[48%]
       z-10
-      w-[90%]
-      -translate-x-[43%]
+      w-[100%]
+      h-[105%]
+      -translate-x-[50%]
       translate-y-[10%]
-   
+      lg:h-[118%]
       md:w-[100%]
-      lg:w-[80%]
+      
     "
   />
 </div>
@@ -144,53 +146,51 @@ const HeroSection = () => {
             {/* Stay Tuned */}
             <div
               className="
-                h-[200px]
+                h-[202px]
                 w-full
+               lg:pl-4
+                lg:-space-y-4
                 rounded-[24px]
                 bg-[#C0612B]
                 sm:h-[230px]
                 sm:w-[280px]
                 md:h-[258px]
                 md:w-[280px]
-                lg:w-[340px]
+                lg:w-[350px]
               ">
               <h2
                 className="
                   pl-8
-                  pt-10
-                  text-7xl
+                  pt-8
+                  text-[40px]
+                  font-[Tusker-Grotesk]
                   font-bold
                   leading-16
                   tracking-[8%]
                   md:p-8
                   md:pt-14
-                  lg:text-6xl 
-                  lg:font-extrabold
+                  lg:text-[48px]
+                  leading-[140%]
+                  tracking-[4%]
+                  lg:pl-2
+                  lg:pt-4
+                  lg:font-bold
+                  uppercase
+                  text-white
                 ">
-                <span
-                  className="
-                    
-                    font-bold
-                    font-[Tusker-Grotesk]
-                    text-[#000000]
-                  
-                  ">
-                  STAY
-                </span>
-
+                
+                  Download
+                
                 <br />
 
-                <span
-                  className="
-                    font-[Tusker-Grotesk]
-                    font-bold
-                 
-                    text-white
-                  
-                  ">
-                  Tuned...
-                </span>
+             
+                  now...
+             
               </h2>
+              <Image src={'/card/playStore.svg'} alt="playstore" width={189.85365295410156} height={58} className="
+              w-[199px]  lg:w-[230px] lg:pl-1
+                  pl-8
+              " />
             </div>
 
             {/* Launch */}
@@ -198,7 +198,10 @@ const HeroSection = () => {
               className="
                 relative
                 h-[110px]
+                border-[#C0612B]
+                border-1
                 w-full
+                -space-y-4
                 rounded-[24px]
                 sm:h-[120px]
                 sm:w-[280px]
@@ -206,12 +209,22 @@ const HeroSection = () => {
                 md:w-[280px]
                 lg:w-[350px]
               ">
-              <Image
-                src={LaunchImage}
-                alt="launch-image"
-                fill
-                className="absolute inset-0 rounded-lg object-fill"
-              />
+
+<div className="flex justify-around pt-4 gap-32">
+  <div className="font-[SF_Pro] text-[24px] font-semibold ">
+
+  We are:
+  </div>
+
+<Image src={'/card/live.svg'} alt="live" width={70} height={60} />
+
+</div>
+            
+<div className="text-[#C0612B] text-[62px] lg:text-[72px] leading-[140%]  tracking-[-1%] font-semibold text-center ">
+  Live Now
+</div>
+
+
             </div>
           </div>
 
