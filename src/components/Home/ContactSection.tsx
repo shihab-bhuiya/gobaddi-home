@@ -1,3 +1,5 @@
+/** @format */
+
 "use client";
 
 import Image from "next/image";
@@ -45,7 +47,7 @@ const ContactSection = () => {
   };
 
   return (
-    <footer className="relative rounded-t-2xl bg-[#C0612B]  font-[SF_Pro] text-white">
+    <footer className="relative rounded-t-2xl bg-[#C0612B] font-[SF_Pro] text-white">
       {/* ================= TOP CURVE ================= */}
       <div className="pointer-events-none absolute left-0 top-0 z-0 w-full -translate-y-[65%]">
         <Image
@@ -76,8 +78,8 @@ const ContactSection = () => {
         {/* ---------- Heading + Social ---------- */}
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="max-w-[1312px]">
-            <div className="mb-3 inline-flex rounded-full bg-white/90 px-3 py-1">
-              <span className="text-sm font-semibold uppercase tracking-wider text-[#C0612B] sm:text-base lg:text-[18px]">
+            <div className="mb-3 inline-flex rounded-full bg-[#FBE6DA] px-3 py-1">
+              <span className="text-sm  uppercase tracking-wider text-[#C0612B] sm:text-base lg:text-[14px]">
                 Contact Us
               </span>
             </div>
@@ -102,8 +104,7 @@ const ContactSection = () => {
               <Link
                 href="#"
                 aria-label="Facebook"
-                className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-white"
-              >
+                className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-white">
                 <Image
                   src="/card/Facebook-Icon.svg"
                   alt="Facebook"
@@ -118,8 +119,7 @@ const ContactSection = () => {
                   key={label}
                   href="#"
                   aria-label={label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-white/20 text-base transition hover:bg-white/30"
-                >
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-white/20 text-base transition hover:bg-white/30">
                   <Icon />
                 </Link>
               ))}
@@ -143,9 +143,8 @@ const ContactSection = () => {
                   key={item.label}
                   className={`min-w-0 ${
                     item.label === "Office" ? "sm:col-span-2" : ""
-                  }`}
-                >
-                  <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-full border border-white/50">
+                  }`}>
+                  <div className="mb-2 flex h-9 w-9 items-center bg-[#FFFFFF33] justify-center rounded-full border border-white/50">
                     <item.icon size={16} />
                   </div>
                   <p className="text-lg font-semibold sm:text-xl lg:text-[22px]">
@@ -169,8 +168,7 @@ const ContactSection = () => {
               <div>
                 <label
                   htmlFor="email"
-                  className="mb-1 block text-sm font-semibold"
-                >
+                  className="mb-1 block text-sm font-semibold">
                   Email
                 </label>
                 <input
@@ -187,8 +185,7 @@ const ContactSection = () => {
               <div>
                 <label
                   htmlFor="message"
-                  className="mb-1 block text-sm font-semibold"
-                >
+                  className="mb-1 block text-sm font-semibold">
                   Message
                 </label>
                 <textarea
@@ -203,8 +200,7 @@ const ContactSection = () => {
 
               <button
                 type="submit"
-                className="flex h-11 w-full items-center justify-center gap-2 rounded bg-[#C0612B] text-sm font-semibold text-white transition hover:bg-[#a94f21] lg:h-10"
-              >
+                className="flex h-11 w-full items-center justify-center gap-2 rounded bg-[#C0612B] text-sm font-semibold text-white transition hover:bg-[#a94f21] lg:h-10">
                 <Send size={14} />
                 Send Email
               </button>
@@ -228,9 +224,15 @@ const ContactSection = () => {
           </div>
 
           <nav className="mt-2 flex flex-wrap justify-center gap-x-5 gap-y-2 text-base text-white/90 lg:text-[20px] lg:leading-[30px]">
-            <a href="#" className="hover:text-white">About Us</a>
-            <a href="#" className="hover:text-white">Our Vision</a>
-            <a href="#" className="hover:text-white">Contact Us</a>
+            <a href="#" className="hover:text-white">
+              About Us
+            </a>
+            <a href="#" className="hover:text-white">
+              Our Vision
+            </a>
+            <a href="#" className="hover:text-white">
+              Contact Us
+            </a>
           </nav>
         </div>
       </div>

@@ -25,7 +25,8 @@ const HeroSection = () => {
             sm:h-[300px]
             md:h-[350px]
             md:flex-[6]
-            lg:h-[380px]
+            lg:h-[404px]
+          
           ">
           <Image
             src={heroLeftImg}
@@ -75,12 +76,12 @@ const HeroSection = () => {
     relative
     h-[260px]
     w-full
-    lg:w-[370px]
-    rounded-lg
+  
+    rounded-xl
     sm:h-[300px]
     md:h-[350px]
-    md:flex-[4]
-    lg:h-[410px]
+    md:flex-[320px]
+    lg:h-[400px]
 
     
   ">
@@ -110,7 +111,7 @@ const HeroSection = () => {
       h-[105%]
       -translate-x-[50%]
       translate-y-[10%]
-      lg:h-[118%]
+      lg:h-[116%]
       md:w-[100%]
       
     "

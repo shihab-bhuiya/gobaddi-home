@@ -69,7 +69,7 @@ const NavBar = () => {
 
             <Button variant="navBtn">
 
-            <Zap/>  Contact Us
+            <Image src={'/card/thunder.svg'} alt="thunder icons" width={13} height={18}/>  Contact Us
             </Button>
           </div>
 
