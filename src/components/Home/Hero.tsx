@@ -55,7 +55,7 @@ const HeroSection = () => {
             
                 sm:text-[34px]
                 md:text-[42px]
-                lg:text-[60px] 
+                lg:text-[56px] 
                 tracking-[6%]
                 leading-[140%]
                 
