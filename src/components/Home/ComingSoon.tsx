@@ -181,7 +181,7 @@ Z
             className="absolute inset-[5px] overflow-hidden bg-black"
             style={{ clipPath: "url(#livestockBlob)" }}>
             <Image
-              src="/hand.jpeg"
+              src="/card/hand-1.svg"
               alt="New livestock platform"
               fill
               sizes="
