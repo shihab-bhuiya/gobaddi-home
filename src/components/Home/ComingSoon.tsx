@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const ComingSoon = () => {
   return (
-    <section className="relative w-full max-w-full mx-auto px-4 sm:px-6 lg:px-6 mt-10 mb-14">
+    <section className="relative w-full max-w-full mx-auto lg:px-32 px-6    mt-10">
       <div
-        className=" relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10
+        className=" w-full max-w-full mx-auto lg:px-2 px-6    mt-10
 
 flex
 
@@ -30,7 +30,8 @@ md:px-12
             className="
 font-[Audiowide]
 text-[54px]
-font-[400]
+font-bold
+
 lg: w-[480px]
 leading-[0.95]
 tracking-tight
@@ -40,7 +41,7 @@ lg:text-[54px]
 ">
             Something
             <br />
-            New Is
+           <span className="italic font-[Audiowide]">New Is  </span> 
           </h2>
 
           {/* Coming Soon Box */}
@@ -62,6 +63,7 @@ py-2
 font-extrabold
 font-[Audiowide]
 uppercase
+tracking-wider
 mb-4
 leading-[0.82]
 tracking-tight
@@ -99,8 +101,9 @@ lg:text-[64px]
 mt-6
 max-w-[350px]
 text-base
-font-semibold
+
 leading-tight
+font-bold
 text-[#171717]
 sm:text-2xl
 ">
@@ -178,7 +181,7 @@ Z
             className="absolute inset-[5px] overflow-hidden bg-black"
             style={{ clipPath: "url(#livestockBlob)" }}>
             <Image
-              src="/wow/image.png"
+              src="/hand.jpeg"
               alt="New livestock platform"
               fill
               sizes="

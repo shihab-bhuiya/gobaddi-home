@@ -49,7 +49,7 @@ const ContactSection = () => {
 />
 
       {/* ================= CONTACT CONTENT ================= */}
-      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+      <div className="relative w-full max-w-full mx-auto lg:px-28 px-6    mt-10">
         {/* ================= HEADING + SOCIAL ROW ================= */}
         <div className="flex items-start justify-between gap-6">
           <div className="max-w-[500px]">
@@ -70,35 +70,35 @@ const ContactSection = () => {
           </div>
 
           {/* ================= SOCIAL (moved to top-right) ================= */}
-          <div className="flex flex-col items-center shrink-0 mt-26">
+          <div className="flex flex-col  shrink-0 mt-26 pr-72">
             <p className="mb-3 font-[SF_Pro] text-[18px] leading-[150%] font-medium">Follow Us On</p>
 
             <div className="flex gap-2">
               <Link
                 href="#"
                 aria-label="Facebook"
-                className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-[10px] text-[#C0612B]"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-[10px] text-[#C0612B]"
               >
-                <FaFacebook />
+                <Image src={'/card/Facebook-Icon.svg'} alt="facebook" width={50} height={50} />
               </Link>
               <Link
                 href="#"
                 aria-label="Instagram"
-                className="flex h-6 w-6 items-center justify-center rounded-full bg-white/20 text-[10px]"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-[10px]"
               >
-                <FaInstagram />
+                <FaInstagram  />
               </Link>
               <Link
                 href="#"
                 aria-label="X"
-                className="flex h-6 w-6 items-center justify-center rounded-full bg-white/20 text-[10px]"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-[10px]"
               >
                 <FaXTwitter />
               </Link>
               <Link
                 href="#"
                 aria-label="LinkedIn"
-                className="flex h-6 w-6 items-center justify-center rounded-full bg-white/20 text-[10px]"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-[10px]"
               >
                 <FaLinkedin />
               </Link>
@@ -107,7 +107,7 @@ const ContactSection = () => {
         </div>
 
         {/* ================= MAIN CONTENT ================= */}
-        <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-[1fr_320px] md:gap-16">
+        <div className="mt-14 grid grid-cols-1 gap-10 pr-22 md:grid-cols-[1fr_360px] md:gap-16">
           {/* ================= CONTACT DETAILS ================= */}
           <div className="grid grid-cols-1 font-[SF_Pro] text-[30px] gap-7 sm:grid-cols-2">
             {/* Email */}
@@ -116,7 +116,7 @@ const ContactSection = () => {
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/50">
                 <Mail size={13} />
               </div>
-                <p className="text-[30px] font-semibold">Email</p>
+                <p className="text-[22px] font-semibold">Email</p>
                 <p className=" text-[20px] text-white/80">
                   ceo.gobadi@gmail.com
                 </p>
@@ -130,7 +130,7 @@ const ContactSection = () => {
                                 <Phone size={13} />
 
               </div>
-                <p className="text-[30px] font-semibold">Phone</p>
+                <p className="text-[22px] font-semibold">Phone</p>
                 <p className=" text-[20px] text-white/80">
                   +8801911418977
                 </p>
@@ -145,7 +145,7 @@ const ContactSection = () => {
 
 
               </div>
-                <p className="text-[30px] font-semibold">Office</p>
+                <p className="text-[22px] font-semibold">Office</p>
                 <p className=" text-[20px] text-white/80">
                   Road# 9 , house# 5 , Lane#3, Mirpur 11/a,
                   Dhaka, 1216, Bangladesh.
@@ -159,7 +159,7 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit} className="space-y-3">
               {/* Email */}
               <div>
-                <label htmlFor="email" className="mb-1 block text-[9px] font-semibold">
+                <label htmlFor="email" className="mb-1 block text-[12px] font-semibold">
                   Email
                 </label>
                 <input

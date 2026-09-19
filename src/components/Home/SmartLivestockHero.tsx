@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SmartLivestockHero = () => {
   return (
-     <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+     <section className="relative w-full max-w-full mx-auto lg:px-28 px-6    mt-10">
       <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-8 items-center">
         {/* Left Side */}
          <div className="w-full max-w-2xl  font-[SF_Pro] ">
