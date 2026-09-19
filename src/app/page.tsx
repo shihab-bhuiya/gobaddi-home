@@ -10,7 +10,7 @@ import WhoWeAre from "@/components/Home/WhoWeAre";
 
 export default function Home() {
   return (
-      <div className="w-full max-w-full  px-2 lg:px-8 bg-[#FFFDFB]">
+      <div className="w-full max-w-full   bg-[#FFFDFB]">
    <NavBar/>
  
    <HeroSection/>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ComingSoon = () => {
   return (
-    <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 mt-10 mb-14">
+    <section className="relative w-full max-w-full mx-auto px-4 sm:px-6 lg:px-6 mt-10 mb-14">
       <div
         className=" relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10
 

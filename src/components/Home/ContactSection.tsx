@@ -224,7 +224,7 @@ const ContactSection = () => {
       </div>
 
       {/* ================= COPYRIGHT ================= */}
-      <div className="relative z-10 border-t font-[SF_Pro] text-[20px] leading-[30px] border-white/30 py-4 text-center">
+      <div className="relative z-10 border-t font-[SF_Pro] text-[16px] leading-[30px] border-white/30 py-4 text-center">
         <p className=" text-white/80">
           © 2026 gobadi. All rights reserved.
         </p>
