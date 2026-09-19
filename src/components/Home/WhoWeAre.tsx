@@ -7,29 +7,39 @@ export default function WhoWeAre() {
   return (
     <section className="relative w-full max-w-full overflow-hidden pb-16 pt-16">
       {/* Layer 1: Sky (no clouds) - fills entire section */}
-      <div className="absolute inset-x-0 top-0 overflow-hidden rounded-t-full z-20 h-[85%]">
+      <div className="absolute inset-x-0 top-0 z-0 h-[85%]">
         <Image
           src="sky.svg" // TODO: sky.svg path
           alt="Sky background"
           fill
-          className="object-cover "
+          className="object-cover object-top"
           
-        />
-      </div>
-      <div className="absolute bottom-8 left-0 rounded-t-[500px]  overflow-hidden  z-30 h-[95%] w-full">
-        <Image
-          src="/field.svg" // TODO: field image path
-          alt="Field"
-          fill
-   
-          className="object-cover  absolute "
         />
       </div>
 
       {/* Layer 2: Field - pinned to bottom */}
+      <div className="absolute bottom-0 left-0 z-20 h-[100%] w-full">
+        <Image
+          src="/field.svg" // TODO: field image path
+          alt="Field"
+          fill
+        
+          className="object-cover  object-top "
+        />
+      </div>
+
+      <div className="absolute bottom-0 left-0 z-20 h-[40%] w-full">
+        <Image
+          src="/field.svg" // TODO: field image path
+          alt="Field"
+          fill
+        
+          className="object-cover  object-bottom "
+        />
+      </div>
 
       {/* Layer 3: Heading + paragraph content */}
-      <div className="relative z-40 mx-auto flex max-w-2xl flex-col items-center px-4 text-center">
+      <div className="relative z-20 mx-auto flex max-w-2xl flex-col items-center px-4 text-center">
         
             <button className="bg-[#FBE6DA] text-[18px] leading-[100%] uppercase tracking-[10%] font-[SF_Pro] text-[#C0612B] border-[#C0612B] border-2 rounded-2xl px-2 py-1 mb-4 ">
               About Us
