@@ -72,7 +72,7 @@ const ContactSection = () => {
       />
 
       {/* ================= CONTENT ================= */}
-      <div className="relative mx-auto w-full max-w-[1440px] px-5 pt-10 sm:px-8 lg:px-12">
+      <div className="relative mx-auto w-full max-w-[1312px] px-5 pt-10 sm:px-8 lg:px-12">
         {/* ---------- Heading + Social ---------- */}
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="max-w-[1312px]">
