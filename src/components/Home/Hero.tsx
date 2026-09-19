@@ -47,13 +47,13 @@ const HeroSection = () => {
             ">
             <h2
               className="
-                text-[36px]
+                text-[34px]
                 font-bold
            
                 font-['Tusker_Grotesk]
                 italic
             
-                sm:text-[40px]
+                sm:text-[34px]
                 md:text-[42px]
                 lg:text-[48px] 
                 tracking-[8%]
@@ -153,7 +153,7 @@ const HeroSection = () => {
               ">
               <h2
                 className="
-                  pl-16
+                  pl-8
                   pt-10
                   text-7xl
                   font-bold
@@ -297,12 +297,12 @@ const HeroSection = () => {
     lg:leading-10
     lg:text-[22px]
   ">
-            <span className="pl-[46%] md:pl-20 lg:pl-52">
+            <span className="pl-[42%] md:pl-20 lg:pl-52">
               AI-powered digital platform
             </span>
             <br />
 
-            <span className=" pl-[38%] md:pl-16 lg:pl-45">
+            <span className=" pl-[36%] md:pl-16 lg:pl-45">
               transforming the livestock
             </span>
             <br />

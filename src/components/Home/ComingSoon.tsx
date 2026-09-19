@@ -6,38 +6,37 @@ const ComingSoon = () => {
   return (
     <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 mt-10 mb-14">
       <div
-        className="
-mx-auto
+        className=" relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10
+
 flex
-min-h-[430px]
-w-full
-max-w-[1140px]
+
+
 flex-col
 items-center
 justify-between
 gap-10
-px-6
+
 py-14
-sm:px-10
+
 md:flex-row
 md:gap-12
 md:px-12
-lg:min-h-[480px]
-lg:px-20
+
+
 ">
         {/* ================= LEFT CONTENT ================= */}
         <div className="w-full max-w-[430px]">
           <h2
             className="
 font-[Audiowide]
-text-[87px]
+text-[54px]
 font-[400]
-lg: w-[482px]
+lg: w-[480px]
 leading-[0.95]
 tracking-tight
 text-[#171717]
-sm:text-[40px]
-lg:text-[52px]
+
+lg:text-[54px]
 ">
             Something
             <br />
@@ -59,7 +58,7 @@ py-2
 ">
             <p
               className="
-          lg:text-[96px]
+        
 font-extrabold
 font-[Audiowide]
 uppercase
@@ -67,8 +66,8 @@ mb-4
 leading-[0.82]
 tracking-tight
 text-white
-sm:text-[44px]
-lg:text-[58px]
+text-[54px]
+
 ">
               Coming
             </p>

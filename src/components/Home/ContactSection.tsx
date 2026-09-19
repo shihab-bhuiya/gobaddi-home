@@ -49,7 +49,7 @@ const ContactSection = () => {
 />
 
       {/* ================= CONTACT CONTENT ================= */}
-      <div className="relative z-10 mx-auto w-full max-w-[1140px] px-6 pb-10 pt-20 sm:px-10 md:px-12 lg:px-20">
+      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         {/* ================= HEADING + SOCIAL ROW ================= */}
         <div className="flex items-start justify-between gap-6">
           <div className="max-w-[500px]">
@@ -215,8 +215,8 @@ const ContactSection = () => {
             <h2 className="text-2xl font-bold">গবাদি</h2>
           </div>
 
-          <div className="mt-2 flex gap-5 text-[8px] text-white/90">
-            <a href="#" className="hover:text-white">About Us</a>
+          <div className="mt-2 font-[SF_Pro] text-[20px] leading-[30px] flex gap-5 text-[8px] text-white/90">
+            <a href="#" className="hover:text-white ">About Us</a>
             <a href="#" className="hover:text-white">Our Vision</a>
             <a href="#" className="hover:text-white">Contact Us</a>
           </div>
@@ -224,8 +224,8 @@ const ContactSection = () => {
       </div>
 
       {/* ================= COPYRIGHT ================= */}
-      <div className="relative z-10 border-t border-white/30 py-4 text-center">
-        <p className="text-[9px] text-white/80">
+      <div className="relative z-10 border-t font-[SF_Pro] text-[20px] leading-[30px] border-white/30 py-4 text-center">
+        <p className=" text-white/80">
           © 2026 gobadi. All rights reserved.
         </p>
       </div>

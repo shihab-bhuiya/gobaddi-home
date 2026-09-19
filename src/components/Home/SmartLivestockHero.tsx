@@ -112,7 +112,7 @@ const SmartLivestockHero = () => {
             width={30}
             height={30}
             alt="rectangle"
-            className="absolute w-60 h-60  bottom-[60%] left-36"
+            className="absolute w-60 h-60  bottom-[58%] left-32"
           />
            <Image
             src="/hero/Rectangle-20.svg"
