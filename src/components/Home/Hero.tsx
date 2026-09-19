@@ -11,7 +11,7 @@ import logo from "../../../public/hero/Ellipse.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative mx-auto mt-8 w-full max-w-[1440px] px-3 sm:px-4 md:px-6 lg:px-8">
+    <section className="relative mx-auto mt-8 w-full max-w-[1312px] px-3 sm:px-4 md:px-6 lg:px-8">
       {/* First row */}
       <div className="flex flex-col gap-4 md:flex-row">
         {/* LEFT - 60% */}
@@ -55,7 +55,7 @@ const HeroSection = () => {
             
                 sm:text-[34px]
                 md:text-[42px]
-                lg:text-[56px] 
+                lg:text-[52px] 
                 tracking-[6%]
                 leading-[140%]
                 
@@ -156,7 +156,7 @@ const HeroSection = () => {
                 sm:w-[280px]
                 md:h-[258px]
                 md:w-[280px]
-                lg:w-[350px]
+                lg:w-[320px]
               ">
               <h2
                 className="
@@ -169,7 +169,7 @@ const HeroSection = () => {
                   tracking-[8%]
                   md:p-8
                   md:pt-14
-                  lg:text-[48px]
+                  lg:text-[42px]
                   leading-[140%]
                   tracking-[4%]
                   lg:pl-2
@@ -207,7 +207,7 @@ const HeroSection = () => {
                 sm:w-[280px]
                 md:h-[130px]
                 md:w-[280px]
-                lg:w-[350px]
+                lg:w-[320px]
               ">
 
 <div className="flex justify-around pt-4 gap-32">
@@ -239,7 +239,7 @@ const HeroSection = () => {
               sm:min-h-[350px]
               md:min-h-[380px]
               md:w-[280px]
-              lg:w-[365px]
+              lg:w-[325px]
             ">
             <Image
               src={handPhoneBg}

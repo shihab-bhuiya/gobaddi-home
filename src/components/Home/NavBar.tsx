@@ -42,7 +42,7 @@ const NavBar = () => {
               <li>
                 <Link
                   href="/home"
-                  className="text-[18px] font-['SF_Pro'] font-extrabold leading-[120%] tracking-[0%] text-[#171717] transition hover:text-[#C0612B]"
+                  className="text-[18px] font-['SF_Pro'] font-bold leading-[120%] tracking-[0%] text-[#171717] transition hover:text-[#C0612B]"
                 >
                   Home
                 </Link>
