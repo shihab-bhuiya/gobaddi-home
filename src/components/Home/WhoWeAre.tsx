@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function WhoWeAre() {
   return (
-    <section className="relative w-full overflow-hidden pb-16 pt-16">
+    <section className="relative w-full max-w-full overflow-hidden pb-16 pt-16">
       {/* Layer 1: Sky (no clouds) - fills entire section */}
       <div className="absolute inset-x-0 top-0 z-0 h-[85%]">
         <Image

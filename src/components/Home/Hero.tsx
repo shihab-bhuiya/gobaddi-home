@@ -93,21 +93,21 @@ const HeroSection = () => {
   <Image
     src={HerCow}
     alt="hero-cow"
-    width={610}
+    width={820}
     height={426}
     className="
       absolute
       bottom-0
       left-5/12
-      bottom-8
+      bottom-12
       
       z-10
-      w-[75%]
-      -translate-x-1/2
-      translate-y-[6%]
+      w-[95%]
+      -translate-x-[43%]
+      translate-y-[10%]
    
-      md:w-[95%]
-      lg:w-[92%]
+      md:w-[100%]
+      lg:w-[125%]
     "
   />
 </div>

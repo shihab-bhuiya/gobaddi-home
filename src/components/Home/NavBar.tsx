@@ -14,8 +14,8 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="mx-3 my-3 rounded-xl bg-white p-3 sm:mx-4 sm:my-4 sm:p-4">
-      <div className="mx-auto w-full max-w-7xl">
+    <nav className="mx-3 my-3 rounded-xl bg-white sticky top-0 z-50 p-3 sm:mx-4 sm:my-4 sm:p-4">
+      <div className="mx-auto w-full max-w-full ">
 
         {/* ================= NAVBAR ================= */}
         <div className="flex items-center justify-between px-2 sm:px-4 lg:px-6">
