@@ -6,6 +6,8 @@ This project is not a full backend application yet. It is mainly a frontend land
 
 ---
 
+## Live lInk : https://gobaddi-home.vercel.app/ 
+
 ## Project Purpose
 
 The app introduces a platform for:
