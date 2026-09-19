@@ -188,7 +188,7 @@ const HeroSection = () => {
              
               </h2>
               <Image src={'/card/playStore.svg'} alt="playstore" width={189.85365295410156} height={58} className="
-              w-[199px]  lg:w-[230px] lg:pl-1
+              w-[200px]  lg:w-[230px] lg:pl-1
                   pl-8
               " />
             </div>

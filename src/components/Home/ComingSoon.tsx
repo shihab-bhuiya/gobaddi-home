@@ -1,74 +1,90 @@
 import Image from "next/image";
+// top of the file
+import { Orbitron } from "next/font/google";
+import Link from "next/link";
+
+const orbitron = Orbitron({ subsets: ["latin"], weight: ["600", "700"] });
+
 
 const ComingSoon = () => {
   return (
-    <section className="mx-auto mt-8 w-full max-w-[1440] mb-16 px-6 md:px-10 lg:px-12">
-      <div className="flex flex-col max-w-[1376px] items-center justify-between gap-12 py-14 md:flex-row md:gap-16">
-        {/* ================= LEFT CONTENT ================= */}
-        <div className="w-full md:max-w-[600px]">
-          <h2 className="font-[Audiowide] text-[44px] leading-[1.05] font-bold text-[#171717] sm:text-[56px] lg:text-[76px]">
-            Something
-            <br />
-            <span className="italic"> New  </span>   Is
-        
+    <section className="mx-auto  mt-8 w-full max-w-[1440] mb-32 px-6 md:px-10 lg:px-12">
+
+
+     <div className="relative w-full mx-auto max-w-[1312px] max-h-[586px] pb-6 overflow-hidden rounded-[24px] border border-[#C4622D]/70 bg-gradient-to-br from-white via-white to-[#FBE9DA]">
+        {/* 1. BACKGROUND LAYER (add your pattern image later) */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 z-0">
+       
+
+          <Image src={'/playstore/left-top-corner.png'} alt="bg" width={130} height={130} className="absolute w-[400px]   rounded-2xl top-0 left-0" />
+          <Image src={'/playstore/left-top-corner.png'} alt="bg" width={130} height={130} className="absolute w-[290px]   rounded-[100px] -bottom-40 left-[45%]" />
+          
+
+          <Image src={'/playstore/BG-Pattern.png'} alt="bg" fill className="absolute w-[250px]  overflow-visible rounded-2xl top-0 " />
+        </div>
+
+
+
+        {/* 2. TEXT CONTENT (sets the card height) */}
+        <div className="relative z-10 px-6 pt-8 text-center md:w-1/2 md:px-10 md:py-14 md:text-left lg:px-14">
+          <h2 className={`${orbitron.className} font-bold`}>
+            <span className="block text-xl text-neutral-800 sm:text-2xl lg:text-3xl">
+              <span className="text-[#C4622D]">GOBAADI</span> App Is
+            </span>
+            <span className="mt-1 block text-5xl leading-tight text-[#C4622D] sm:text-6xl lg:text-7xl">
+              Live Now!
+            </span>
           </h2>
 
-          {/* Coming Soon box */}
-          <div className="mt-4 inline-block rounded-[14px] bg-[#C0612B] px-4 py-3 lg:px-6 lg:py-5">
-            <p className="font-[Audiowide] text-[46px] uppercase leading-none tracking-wide text-white sm:text-[56px] lg:text-[80px]">
-              Coming
-            </p>
-
-            <div className="mt-2 flex gap-2 font-[Audiowide] lg:mt-3 lg:gap-3">
-              {["S", "O", "O", "N"].map((letter, i) => (
-                <span
-                  key={i}
-                  className="rounded-lg bg-white px-3 text-[44px] uppercase leading-[1.1] text-[#C0612B] sm:text-[56px] lg:px-4 lg:text-[76px]"
-                >
-                  {letter}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <p className="mt-8 text-xl font-bold leading-snug text-[#171717] sm:text-2xl lg:text-[34px]">
-            Our new and improved
-            <br />
-            digital livestock platform.
+          <p className="mx-auto mt-5 max-w-[380px] text-sm font-semibold text-neutral-800 sm:text-base md:mx-0">
+            Use AI-powered{" "}
+            <span className="font-bold italic text-[#C4622D]">GOBAADI</span>{" "}
+            mobile app &amp; know what your cattle actually needs!
           </p>
-        </div>
 
-        {/* ================= BLOB IMAGE ================= */}
-        <div className="relative h-[340px] w-[300px] shrink-0 sm:h-[440px] sm:w-[380px] lg:h-[580px] lg:w-[500px]">
-          <svg className="absolute h-0 w-0" aria-hidden="true">
-            <defs>
-              <clipPath id="livestockBlob" clipPathUnits="objectBoundingBox">
-                <path d="M 1 0.16 C 0.88 0.11, 0.78 0.09, 0.67 0.10 C 0.50 0.11, 0.36 0.18, 0.25 0.29 C 0.15 0.39, 0.08 0.51, 0.08 0.64 C 0.08 0.76, 0.14 0.87, 0.25 0.94 C 0.36 1.01, 0.48 0.98, 0.58 0.89 C 0.67 0.81, 0.69 0.69, 0.76 0.59 C 0.82 0.50, 0.90 0.42, 1 0.34 Z" />
-              </clipPath>
-            </defs>
-          </svg>
-
-          {/* Orange ring */}
-          <div
-            className="absolute inset-0 bg-[#F28C28]"
-            style={{ clipPath: "url(#livestockBlob)" }}
-          />
-
-          {/* Photo */}
-          <div
-            className="absolute inset-[5px] overflow-hidden bg-black"
-            style={{ clipPath: "url(#livestockBlob)" }}
+          {/* Google Play badge slot: attach the image later */}
+          
+          <Link
+            href="#"
+            aria-label="Get it on Google Play"
+            className="relative mx-auto mt-6 mb-4 block h-[52px] w-[170px] sm:h-[56px] sm:w-[180px] md:mx-0"
           >
-            <Image
-              src="/card/hand-1.svg"
-              alt="New livestock platform"
-              fill
-              sizes="(max-width: 640px) 300px, (max-width: 1024px) 380px, 500px"
-              className="object-cover"
-            />
-          </div>
+            {/* <Image src={GooglePlayBadge} alt="Get it on Google Play" fill className="object-contain" /> */}
+            <Image src={'/playstore/playsStore-2.svg'} alt="playStore" fill className="max-w-[360px] w-full object-contain " />
+          </Link>
         </div>
-      </div>
+
+        {/* 3. PHONES: in flow on mobile, absolute on md+ */}
+        <div
+          className="
+            relative
+            z-10
+            mx-auto
+            -mt-1
+            h-[236px]
+            w-full
+            max-w-[360px]
+            sm:h-[320px]
+            md:absolute
+            md:bottom-8
+            md:right-6
+            md:mt-0
+            md:h-[90%]
+            md:w-[46%]
+            md:max-w-none
+            lg:right-12
+          "
+        >
+          <Image
+            src={'/playstore/two-phone.svg'}
+            alt="GOBAADI app preview"
+            fill
+            priority
+            className="object-contain lg:w-[359px] h-[359px] object-bottom"
+          />
+        </div>
+    </div>
+
     </section>
   );
 };
