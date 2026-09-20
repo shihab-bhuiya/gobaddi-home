@@ -12,7 +12,9 @@ import logo from "../../../public/hero/Ellipse.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative mx-auto mt-8 w-full max-w-[1312px] px-3 sm:px-4 md:px-6 lg:px-8">
+    <section className="relative  mt-8   px-3 sm:px-4 md:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1312px]">
+
       {/* First row */}
       <div className="flex flex-col gap-4 md:flex-row">
         {/* LEFT - 60% */}
@@ -22,6 +24,7 @@ const HeroSection = () => {
             h-[260px]
             w-full
             overflow-hidden
+     
             rounded-lg
             sm:h-[300px]
             md:h-[350px]
@@ -366,6 +369,7 @@ const HeroSection = () => {
     lg:w-[250px]
   "
       />
+ </div>
     </section>
   );
 };
