@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Tusker_Grotesk } from "./font";
+
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -81,9 +83,19 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
+       className={cn(
+    "h-full",
+    "antialiased",
+    geistSans.variable,
+    geistMono.variable,
+    inter.variable,
+
+     Tusker_Grotesk.variable,
+    "font-sans"
+  )}
+
     >
-      <body className="min-h-full flex flex-col bg-[#FAF8F5]">{children}</body>
+      <body className="min-h-full flex flex-col Tusker_Grotesk.variable bg-[#FAF8F5]">{children}</body>
     </html>
   );
 }

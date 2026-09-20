@@ -4,7 +4,6 @@ import Image from "next/image";
 import heroRightImg from "../../../public/hero/card-bg-of-cow.jpg";
 import heroLeftImg from "../../../public/hero/hero-left-img.jpg";
 import HerCow from "../../../public/hero/hero-right-cow.png";
-import LaunchImage from "../../../public/hero/near-to-launch.png";
 import handPhoneBg from "../../../public/hero/hand-phone-bg.png";
 import bg from "../../../public/hero/bg.png";
 import logo from "../../../public/hero/Ellipse.png";
@@ -51,7 +50,7 @@ const HeroSection = () => {
                 text-[34px]
                 font-extrabold
            
-                font-['Tusker_Grotesk]
+              font-[var(--font-tusker-grotesk)]
                 
             
                 sm:text-[34px]
@@ -212,7 +211,7 @@ const HeroSection = () => {
               ">
 
 <div className="flex justify-around pt-4 gap-32">
-  <div className="font-[SF_Pro] text-[24px] font-semibold ">
+  <div className="font-[var(--font-sf-pro)] text-[24px] font-semibold ">
 
   We are:
   </div>

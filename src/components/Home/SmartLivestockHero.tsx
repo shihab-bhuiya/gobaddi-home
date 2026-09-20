@@ -8,7 +8,7 @@ const SmartLivestockHero = () => {
       <div className="grid grid-cols-1 max-w-[1312] lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-8 items-center">
         {/* Left Side */}
          <div className="w-full max-w-full  font-[SF_Pro] ">
-          <button className="text-[#C0612B] border border-[#C0612B] rounded-2xl p-1 bg-[#FBE6DA] ">
+          <button className="text-[#C0612B] font-medium border border-[#C0612B] rounded-xl px-3 bg-[#FBE6DA] ">
             OUR VISIONS
           </button>
 
