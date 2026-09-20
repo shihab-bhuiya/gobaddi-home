@@ -77,11 +77,11 @@ const ContactSection = () => {
       linear-gradient(to right, rgba(255,255,255,0.22) 0.5px, transparent 1px),
       linear-gradient(to bottom, rgba(255,255,255,0.22) 0.5px, transparent 1px)
     `,
-    backgroundSize: "28px 28px",
+    backgroundSize: "18px 18px",
     maskImage:
-      "radial-gradient(ellipse 65% 60% at 30% 45%, black 0%, transparent 80%)",
+      "radial-gradient(ellipse 60% 60% at 30% 45%, black 0%, transparent 80%)",
     WebkitMaskImage:
-      "radial-gradient(ellipse 65% 60% at 40% 45%, black 0%, transparent 80%)",
+      "radial-gradient(ellipse 60% 60% at 40% 45%, black 0%, transparent 80%)",
   }}
 />
       {/* ================= CONTENT ================= */}
