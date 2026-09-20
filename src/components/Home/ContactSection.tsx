@@ -47,7 +47,7 @@ const ContactSection = () => {
   };
 
   return (
-    <footer className="relative rounded-t-2xl bg-[#C0612B] font-[SF_Pro] text-white">
+    <footer className="relative rounded-t-2xl bg-[#C0612B] mx-auto font-[SF_Pro] text-white">
       {/* ================= TOP CURVE ================= */}
       <div className="pointer-events-none absolute left-0 top-0 z-0 w-full -translate-y-[65%]">
         <Image

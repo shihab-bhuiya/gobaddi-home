@@ -14,7 +14,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className=" my-3 rounded-xl bg-white sticky top-0 z-50 p-3 sm:mx-4 sm:my-4 sm:p-4">
+    <nav className=" my-3 rounded-xl bg-white sticky mx-auto top-0 z-50 p-3 sm:mx-4 sm:my-4 sm:p-4">
       <div className=" w-full max-w-full ">
 
         {/* ================= NAVBAR ================= */}

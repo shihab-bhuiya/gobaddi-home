@@ -8,7 +8,7 @@ const orbitron = Orbitron({ subsets: ["latin"], weight: ["600", "700"] });
 
 const ComingSoon = () => {
   return (
-    <section className="mx-auto  mt-24 w-full max-w-[1440] mb-40 px-6 md:px-10 lg:px-12">
+    <section className="mx-auto  mt-24 w-full max-w-[1440]  mb-40 px-6 md:px-10 lg:px-12">
 
 
      <div className="relative w-full mx-auto max-w-[1312px] max-h-[586px] pb-6 overflow-hidden rounded-[24px] border border-[#C4622D]/70 bg-gradient-to-br from-white via-white to-[#FBE9DA]">

@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function WhoWeAre() {
   return (
-    <section className="relative w-full max-w-full mt-6 overflow-hidden pb-16 pt-16">
+    <section className="relative w-full max-w-[1440px] mx-auto mt-6 overflow-hidden pb-16 pt-16">
       {/* Layer 1: Sky (no clouds) - fills entire section */}
-      <div className="absolute inset-x-0 top-0 z-0 h-[81%]">
+      <div className="absolute inset-x-0 top-0 z-0 h-[81%] hidden">
         <Image
           src="sky.svg" // TODO: sky.svg path
           alt="Sky background"
