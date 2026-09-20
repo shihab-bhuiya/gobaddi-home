@@ -31,8 +31,7 @@ const ComingSoon = () => {
             <span className="block text-xl text-neutral-800 sm:text-2xl lg:text-3xl">
               <span className="text-[#C4622D]">GOBAADI</span> App Is
             </span>
-            <span className="mt-1 block text-5xl leading-tight text-[#C4622D] sm:text-6xl lg:text-7xl">
-              Live Now!
+            <span className="mt-1 block text-5xl leading-tight tracking-tighter  text-[#C4622D] sm:text-6xl lg:text-7xl">Li<span className="italic ">v</span>e No<span className="italic">w</span>!
             </span>
           </h2>
 

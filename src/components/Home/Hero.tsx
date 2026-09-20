@@ -8,6 +8,8 @@ import handPhoneBg from "../../../public/hero/hand-phone-bg.png";
 import bg from "../../../public/hero/bg.png";
 import logo from "../../../public/hero/Ellipse.png";
 
+
+
 const HeroSection = () => {
   return (
     <section className="relative mx-auto mt-8 w-full max-w-[1312px] px-3 sm:px-4 md:px-6 lg:px-8">

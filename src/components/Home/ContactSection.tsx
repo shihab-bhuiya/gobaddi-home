@@ -60,19 +60,30 @@ const ContactSection = () => {
       </div>
 
       {/* ================= DOT PATTERN ================= */}
-      <div
-        className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-t-2xl opacity-[0.35]"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 1.5px)",
-          backgroundSize: "16px 16px",
-          maskImage:
-            "radial-gradient(ellipse 70% 55% at 50% 40%, black 0%, transparent 75%)",
-          WebkitMaskImage:
-            "radial-gradient(ellipse 70% 55% at 50% 40%, black 0%, transparent 75%)",
-        }}
-      />
+   {/* ================= GLOW ================= */}
+<div
+  className="pointer-events-none absolute inset-0 z-0 rounded-t-2xl"
+  style={{
+    background:
+      "radial-gradient(ellipse 60% 55% at 40% 40%, rgba(255,255,255,0.18) 0%, transparent 70%)",
+  }}
+/>
 
+{/* ================= GRID TEXTURE ================= */}
+<div
+  className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-t-2xl"
+  style={{
+    backgroundImage: `
+      linear-gradient(to right, rgba(255,255,255,0.22) 0.5px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.22) 0.5px, transparent 1px)
+    `,
+    backgroundSize: "28px 28px",
+    maskImage:
+      "radial-gradient(ellipse 65% 60% at 30% 45%, black 0%, transparent 80%)",
+    WebkitMaskImage:
+      "radial-gradient(ellipse 65% 60% at 40% 45%, black 0%, transparent 80%)",
+  }}
+/>
       {/* ================= CONTENT ================= */}
       <div className="relative mx-auto w-full max-w-[1312px] px-5 pt-10 sm:px-8 lg:px-12">
         {/* ---------- Heading + Social ---------- */}
