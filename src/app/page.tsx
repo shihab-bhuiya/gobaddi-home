@@ -10,7 +10,7 @@ import WhoWeAre from "@/components/Home/WhoWeAre";
 
 export default function Home() {
   return (
-      <div className=" max-w-[1440px] mx-auto  bg-[#FFFDFB]">
+      <div className=" max-w-[1440px] mx-auto  bg-[#FAF8F5]">
    <NavBar/>
  
    <HeroSection/>
